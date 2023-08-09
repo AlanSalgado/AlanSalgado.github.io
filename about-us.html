@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="src/logo.png" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Stream Routes</title>
+        <style>
+            body {
+                background-color: #FFF7E7;
+            }
+            .dark-theme {
+                background-color: #192833;
+                color: #FFF7E7;
+                font-weight: bold;
+                font-size: 15pt;
+                text-align: center;
+            }
+            .light-theme {
+                background-color: #FFF7E7;
+                color: #192833;
+                font-weight: bold;
+                font-size: 15pt;
+                text-align: center;
+            }
+            .btn-custom {
+                font-size: 32px;
+                height: 75px;
+                width: 1000px;
+                padding: 10px 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Barra de Navegación-->
+        <nav class="navbar sticky-top dark-theme">
+            <div class="container-fluid">
+                <div class="col-auto">
+                    <img src="src/logo.png" alt="Siempre en la direccion corecta" width="75" height="75" class="m-2">
+                    <img src="src/logo-texto.png" alt="Stream Routes" width="150" height="75" class="m-2">
+                </div>
+                <div class="col-auto">
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about_us.html">Nosotros</a>
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about_us.html">Rutas</a>
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about_us.html">Contactanos</a>
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about_us.html">Turismo</a>                
+                </div>
+            </div>
+        </nav>
+
+        <!--Imagen-->
+        <div class="text-center">
+            <figure class="figure">
+                <img src="src/historia.png" class="figure-img img-fluid rounded">
+            </figure>
+        </div>
+
+        <!--Menu lateral-->
+        <div class="container-fluid">
+            <div class="row justify-content-evenly">
+                <div class="col-auto">
+                    <h1>Antecedentes</h1>
+                    <div class="text-center">
+                        <figure class="figure">
+                            <img src="src/camino.png" class="figure-img img-fluid rounded">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0 light-theme" href="privacy-notice.html">Aviso de privacidad</a></p>
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0 light-theme" href="mision-vision.html">Misión y visión</a></p>
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0 light-theme" href="#">Valores y creencias</a></p>
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0 light-theme" href="#">Preguntas frecuentes</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!--Carrusel o usar card/group-->
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <h1>¡Nuestro equipo!</h1>
+                <div id="carouselExampleRide" class="carousel slide w-25" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="src/equipo-recorte.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/nay.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/cris.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/mario.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/alan.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
