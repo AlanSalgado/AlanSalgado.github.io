@@ -1,128 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="shortcut icon" href="src/logo.png" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Stream Routes</title>
-    <style>
-        body {
-            background-color: #FFF7E7;
-        }
-        .dark-theme {
-            background-color: #192833;
-            color: #FFF7E7;
-            font-weight: bold;
-            font-size: 15pt;
-            text-align: center;
-        }
-        .light-theme {
-            background-color: #FFF7E7;
-            color: #192833;
-            font-weight: bold;
-            font-size: 15pt;
-            text-align: center;
-        }
-        .btn-custom {
-            font-size: 32px;
-            height: 75px;
-            width: 1000px;
-            padding: 10px 40px;
-        }
-    </style>
-</head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stream Routes</title>
+        <link rel="shortcut icon" href="src/logo.png" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
 
-<body>
-    <!--Barra de Navegación-->
-    <nav class="navbar sticky-top dark-theme">
-        <div class="container-fluid my-2" style="width: 80%;">
-            <div class="col-auto">
-                <a href="index.html"><img src="src/logo-nuevo.png"></a>
-                <a href="index.html"><img src="src/logo-texto-nuevo.png"></a>
+    <body>
+        <!--Barra de Navegación-->
+        <nav class="navbar sticky-top dark-theme">
+            <div class="container-fluid my-2" style="width: 80%;">
+                <div class="col-auto">
+                    <a href="index.html"><img src="src/logo-nuevo.png"></a>
+                    <a href="index.html"><img src="src/logo-texto-nuevo.png"></a>
+                </div>
+                <div class="col-auto">
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about-us.html">Nosotros</a>
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about-us.html">Rutas</a>
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about-us.html">Contactanos</a>
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about-us.html">Turismo</a>                
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+        <!--Menu con botones-->
+        <div class="row justify-content-end p-3 m-2 light-theme">
+            <div class="col-auto border-end border-black">
+                <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="about-us.html">Nosotros</a>
+            </div>
+            <div class="col-auto border-end border-black">
+                <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="#">Calificanos</a>
+            </div>
+            <div class="col-auto border-end border-black">
+                <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="#">Rutas</a>
+            </div>
+            <div class="col-auto border-end border-black">
+                <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="#">Contáctanos</a>
             </div>
             <div class="col-auto">
-                <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about-us.html">Nosotros</a>
-                <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about-us.html">Rutas</a>
-                <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about-us.html">Contactanos</a>
-                <a class="link-offset-2 link-underline link-underline-opacity-0 dark-theme m-3" href="about-us.html">Turismo</a>                
+                <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="#">Turismo</a>
             </div>
         </div>
-    </nav>
 
-    <!--Menu con botones-->
-    <div class="row justify-content-end p-3 m-2 light-theme">
-        <div class="col-auto border-end border-black">
-            <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="about-us.html">Nosotros</a>
+        <!--Apartado de publicidad (Pendiente)-->
+        <div class="row p-5">
         </div>
-        <div class="col-auto border-end border-black">
-            <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="#">Calificanos</a>
-        </div>
-        <div class="col-auto border-end border-black">
-            <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="#">Rutas</a>
-        </div>
-        <div class="col-auto border-end border-black">
-            <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="#">Contáctanos</a>
-        </div>
-        <div class="col-auto">
-            <a class="link-offset-2 link-underline link-underline-opacity-0 light-theme m-3" href="#">Turismo</a>
-        </div>
-    </div>
 
-    <!--Apartado de publicidad (Pendiente)-->
-    <div class="row p-5">
-    </div>
-
-    <!--Boton enorme-->
-    <div class="row p-5 light-theme d-flex align-items-center">
-        <div class="col-md-1"></div>
-        <div>
-            <button type="button" class="btn btn-warning lg">Bienvenido a la nueva experiencia de viajar</button>
+        <!--Boton enorme-->
+        <div class="row p-5 light-theme d-flex align-items-center">
+            <div class="col-md-1"></div>
+            <div>
+                <button type="button" class="btn btn-warning lg">Bienvenido a la nueva experiencia de viajar</button>
+            </div>
+            <div class="col-1"></div>
         </div>
-        <div class="col-1"></div>
-    </div>
 
-    <!--Menu inferior-->
-    <div class="row p-3 light-theme d-flex align-items-center">
-        <div class="row p-2 d-flex align-items-center justify-content-center">
-            Diseña un viaje a tu medida
-        </div>
-        <div class="row p-2 d-flex align-items-center justify-content-center">
-            <form class="row needs-validation d-flex align-items-center justify-content-center" novalidate>
-                <div class="col-auto">
-                    <label for="lblOrigen" class="form-label">Origen</label>
-                    <input type="text" class="form-control" id="txtOrigen" required>
-                    <div class="invalid-feedback">
-                        Introduce un dato valido
+        <!--Menu inferior-->
+        <div class="row p-3 light-theme d-flex align-items-center">
+            <div class="row p-2 d-flex align-items-center justify-content-center">
+                Diseña un viaje a tu medida
+            </div>
+            <div class="row p-2 d-flex align-items-center justify-content-center">
+                <form class="row needs-validation d-flex align-items-center justify-content-center" novalidate>
+                    <div class="col-auto">
+                        <label for="lblOrigen" class="form-label">Origen</label>
+                        <input type="text" class="form-control" id="txtOrigen" required>
+                        <div class="invalid-feedback">
+                            Introduce un dato valido
+                        </div>
                     </div>
-                </div>
-                <div class="col-auto">
-                    <button type="button" class="btn m-2">
-                        <img src="src/intercambio.png" alt="Buscar" width="50" height="50">
-                    </button>
-                </div>
-                <div class="col-auto">
-                    <label for="lblDestino" class="form-label">Destino</label>
-                    <input type="text" class="form-control" id="txtDestino" required>
-                    <div class="invalid-feedback">
-                        Introduce un dato valido
+                    <div class="col-auto">
+                        <button type="button" class="btn m-2">
+                            <img src="src/intercambio.png" alt="Buscar" width="50" height="50">
+                        </button>
                     </div>
-                </div>  
-                <div class="col-auto">
-                    <label for="lblHorarios" class="form-label">Horarios</label>
-                    <select class="form-select" id="cmbHorarios" required>
-                        <option selected disabled>Selecciona un horario</option>    
-                        <option>...</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Introduce un dato valido
+                    <div class="col-auto">
+                        <label for="lblDestino" class="form-label">Destino</label>
+                        <input type="text" class="form-control" id="txtDestino" required>
+                        <div class="invalid-feedback">
+                            Introduce un dato valido
+                        </div>
+                    </div>  
+                    <div class="col-auto">
+                        <label for="lblHorarios" class="form-label">Horarios</label>
+                        <select class="form-select" id="cmbHorarios" required>
+                            <option selected disabled>Selecciona un horario</option>    
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Introduce un dato valido
+                        </div>
                     </div>
-                </div>
-                <div class="col-auto">
-                    <button type="button" class="btn btn-warning">Buscar</button>
-                </div>
-            </form>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-warning">Buscar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-
+    
     <footer class="text-center dark-theme fixed-bottom">
         <div class="container-fluid">
             <div class="col-auto p-2">

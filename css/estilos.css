@@ -1,0 +1,29 @@
+body {
+    background-color: #FFF7E7;
+}
+.dark-theme {
+    background-color: #192833;
+    color: #FFF7E7;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+.light-theme {
+    background-color: #FFF7E7;
+    color: #192833;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+.btn-custom {
+    font-size: 32px;
+    height: 75px;
+    width: 1000px;
+    padding: 10px 40px;
+}
+.paragraph-custom {
+    background-color: #FFF7E7;
+    color: #192833;
+    font-size: x-large;
+    text-align: left;
+}
