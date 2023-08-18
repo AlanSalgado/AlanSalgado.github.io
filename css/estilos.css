@@ -4,14 +4,14 @@ body {
 .dark-theme {
     background-color: #192833;
     color: #FFF7E7;
-    font-weight: bold;
+    font-weight: normal;
     font-size: x-large;
     text-align: center;
 }
 .light-theme {
     background-color: #FFF7E7;
     color: #192833;
-    font-weight: bold;
+    font-weight: normal;
     font-size: x-large;
     text-align: center;
 }
