@@ -11,7 +11,7 @@
 
     <body>
         <!--Barra de Navegación-->
-        <nav class="navbar sticky-top dark-theme">
+        <nav class="navbar navbar-expand-lg sticky-top dark-theme">
             <div class="container-fluid my-2" style="width: 80%;">
                 <div class="col-auto">
                     <a href="index.html"><img src="src/logo-nuevo.png"></a>
@@ -28,15 +28,15 @@
 
         <!--Imagen-->
         <div class="text-center">
-            <figure class="figure">
-                <img src="src/historia.png" class="figure-img img-fluid rounded">
+            <figure class="figure justify-content-center">
+                <img src="src/historia.png" class="figure-img img-fluid" width="2000">
             </figure>
         </div>
 
         <!--Menu lateral-->
-        <div class="container-fluid">
+        <div class="container-fluid py-3 my-3 border-top border-warning border-4" style="width: 74%;">
             <div class="row justify-content-evenly">
-                <div class="col-auto">
+                <div class="col-auto text-center">
                     <h1>Antecedentes</h1>
                     <div class="text-center">
                         <figure class="figure">
@@ -54,10 +54,10 @@
         </div>
 
         <!--Carrusel o usar card/group-->
-        <div class="container text-center">
+        <div class="container text-center py-3">
             <div class="row justify-content-center">
                 <h1>¡Nuestro equipo!</h1>
-                <div id="carouselExampleRide" class="carousel slide w-25" data-bs-ride="true">
+                <div id="carouselExampleRide" class="carousel slide w-25  border border-black border-2 py-2" data-bs-ride="true">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="src/equipo-recorte.jpeg" class="d-block w-100" alt="...">
@@ -86,6 +86,21 @@
                 </div>
             </div>
         </div>
+
+        <footer class="text-center dark-theme mt-5">
+            <div class="container-fluid mx-auto" style="width: 80%;">
+                <div class="col-auto p-2">
+                    <section>
+                        <a class="p-2" href="https://www.instagram.com/stream_routes/" target="_blank"><img src="src/instagram.png"></a>
+                        <a class="p-2" href="https://www.google.com/" target="_blank"><img src="src/google.png"></a>
+                    </section>
+                    <!-- Copyright -->
+                    <div class="text-center dark-theme p-2 col-auto">
+                        © 2023 Copyright: Stream Routes
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
         <script src="js/bootstrap.min.js"></script>

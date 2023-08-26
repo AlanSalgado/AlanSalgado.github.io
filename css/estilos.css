@@ -5,14 +5,14 @@ body {
     background-color: #192833;
     color: #FFF7E7;
     font-weight: normal;
-    font-size: x-large;
+    font-size: 120%;
     text-align: center;
 }
 .light-theme {
     background-color: #FFF7E7;
     color: #192833;
     font-weight: normal;
-    font-size: x-large;
+    font-size: 120%;
     text-align: center;
 }
 .btn-custom {
@@ -24,6 +24,7 @@ body {
 .paragraph-custom {
     background-color: #FFF7E7;
     color: #192833;
-    font-size: x-large;
+    font-size: 120%;
     text-align: left;
 }
+
