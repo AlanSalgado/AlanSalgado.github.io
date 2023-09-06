@@ -15,7 +15,8 @@
         <nav id="menu" class="navbar navbar-expand-lg p-3 dark-theme sticky-top navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <span>Stream Routes</span>
+                    <!--  <span>Stream Routes</span>   --> 
+                    <img src="./img/logo-navbar.png" alt="" width="250">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,16 +27,21 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Rutas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contactanos</a>
+                            <a class="nav-link" href="#">Contáctanos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Turismo</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Más
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="privacy-notice.html">Aviso de privacidad</a></li>
+                                <li><a class="dropdown-item" href="mision-vision.html">Misión y visión</a></li>
+                                <li><a class="dropdown-item" href="privacy-notice.html">Valores y creencias</a></li>
+                                <li><a class="dropdown-item" href="mision-vision.html">Preguntas Frecuentes</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -47,24 +53,34 @@
         <img src="./img/historia.png" class="d-block w-100 portada" alt="historia">
 
         <!--HISTORIA-->
-        <section class="row w-100 mx-auto text-center py-5 light-theme">
-            <div class="w-75">
-                <h1 class="p-3 fs-2">INICIOS</h1>
-                <p class="p-3 fs-4">
-                </p>
-            </div>
-            <div class="w-25 justify-content-start text-start mt-5 pt-5">
-                <p><a class="link-offset-2 link-underline link-underline-opacity-0 light-theme ms-4 fs-5" href="privacy-notice.html">Aviso de privacidad</a></p>
-                <p><a class="link-offset-2 link-underline link-underline-opacity-0 light-theme ms-4 fs-5" href="mision-vision.html">Misión y visión</a></p>
-                <p><a class="link-offset-2 link-underline link-underline-opacity-0 light-theme ms-4 fs-5" href="values.html">Valores y creencias</a></p>
-                <p><a class="link-offset-2 link-underline link-underline-opacity-0 light-theme ms-4 fs-5" href="faq.html">Preguntas frecuentes</a></p>
-            </div>
+        <section class="row w-100 mx-auto text-center py-4 light-theme mb-5">
+            <h1 class="p-3 fs-1">Inicios</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <img src="./img/historia-foto.jpeg" class="figure-img img-fluid rounded mb-2" alt="..." width="350">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
+                    En el año 2019 se desarrolla la versión inicial de Stream Rutas, siendo sus fundadores 
+                    estudiantes de nivel medio superior; quienes gracias a su esfuerzo lograron 
+                    ser partícipes del concurso: “Emprendedores 2020” en el tecnológico CBTis 217.
+                    <br><br>
+
+                    En 2020, la aplicación llegó a ocupar un lugar a nivel nacional dentro de la convocatoria 
+                    “Emprendedores 2020”, sin embargo, fue necesario detener el concurso debido a la pandemia 
+                    global por el virus COVID 2019.
+                    <br><br>
+
+                    No obstante, en el presente año 2023, se ha logrado retomar el proyecto con la renovación 
+                    de los integrantes del equipo quienes ya son alumnos universitarios, mismos que se han 
+                    dado a la tarea de enfocar sus esfuerzos para ingresar a la convocatoria de “INNOVATEC” 
+                    con el proyecto denominado Stream Routes.
+                </figcaption>
+            </figure>
         </section>
 
-        <section class="w-100 dark-theme align-items-center ">
+        <section class="w-100 dark-theme align-items-center">
+            <h1 class="p-3 fs-1 text-center">¡Nuestro Equipo!</h1>
             <div class="row w-75 mx-auto" id="servicios-fila-1">       
                 <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-                    <img src="./img/nay.jpeg" alt="desarrollo" width="200" height="200">
+                    <img class="img-thumbnail rounded-4" src="./img/nay.jpeg" alt="desarrollo" width="200" height="200">
                     <div>
                         <h3 class="fs-5 mt-4 px-4 pb-1">Nayeli Cano</h3>
                         <p class="px-4">CEO</p>
@@ -72,7 +88,7 @@
                 </div>
         
                 <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
-                    <img src="./img/cris.jpeg" alt="concepto" width="200" height="200">
+                    <img class="img-thumbnail rounded-4" src="./img/cris.jpeg" alt="concepto" width="200" height="200">
                     <div>
                         <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Cristian Alexis</h3>
                         <p class="px-4">Vicepresidente</p>
@@ -82,7 +98,7 @@
             
             <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">       
                 <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-                    <img src="./img/alan.jpeg" alt="comunicaciones" width="200" height="200 ">
+                    <img class="img-thumbnail rounded-4" src="./img/alan.jpeg" alt="comunicaciones" width="200" height="200 ">
                     <div>
                         <h3 class="fs-5 mt-4 px-4 pb-1">Alan Salgado</h3>
                         <p class="px-4">Gerente de Sistemas</p>
@@ -90,7 +106,7 @@
                 </div>
         
                 <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-                    <img src="./img/quinti.jpeg" alt="seo" width="200" height="200" >
+                    <img class="img-thumbnail rounded-4" src="./img/quinti.jpeg" alt="seo" width="200" height="200" >
                     <div>
                         <h3 class="fs-5 mt-4 px-4 pb-1">Luis Gabriel Quintino</h3>
                         <p class="px-4">Desarrollador</p>
