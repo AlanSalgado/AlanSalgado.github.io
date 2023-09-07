@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 .dark-theme {
     background-color: #192833;
@@ -18,7 +18,10 @@
 #menu a {
     margin-right: 40px;
     font-size: 20px;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -41,4 +44,9 @@ footer {
 body {
     color: #192833;
     background-color: #FFF7E7;
+}
+
+.accordion {
+    --bs-accordion-active-bg: #192833;
+    --bs-accordion-active-color: #FFF7E7;
 }
