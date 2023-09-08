@@ -15,6 +15,11 @@
     background-color: #FFF7E7;
 }
 
+.alternative {
+    color: lightyellow;
+    background-color: #D69212;
+}
+
 #menu a {
     margin-right: 40px;
     font-size: 20px;
@@ -49,4 +54,9 @@ body {
 .accordion {
     --bs-accordion-active-bg: #192833;
     --bs-accordion-active-color: #FFF7E7;
+}
+
+.imagen-carrusel {
+    max-height: 20rem;
+    max-width: 20rem;
 }
