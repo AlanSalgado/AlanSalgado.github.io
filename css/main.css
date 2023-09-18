@@ -24,6 +24,10 @@
     color: #f0af38;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .light-theme {
     color: #192833;
     background-color: #FFF7E7;
