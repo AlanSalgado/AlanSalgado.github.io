@@ -17,45 +17,44 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     </head>
 
-    <body>
-        <!--MENU SUPERIOR-->
-        <nav id="menu" class="navbar navbar-expand-lg p-3 dark-theme sticky-top navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <!--  <span>Stream Routes</span>   --> 
-                    <img src="./img/logo-navbar.png" title="Volver a la página de inicio" alt="" width="250">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact-us.html">Contáctanos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./tourism.html">Turismo</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Más
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./privacy-notice.html">Aviso de privacidad</a></li>
-                                <li><a class="dropdown-item" href="./mission-vision.html">Misión y visión</a></li>
-                                <li><a class="dropdown-item" href="./values.html">Valores y creencias</a></li>
-                                <li><a class="dropdown-item" href="./faq.html">Preguntas Frecuentes</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+    <!--MENU SUPERIOR-->
+    <nav id="menu" class="navbar navbar-expand-lg p-3 dark-theme sticky-top navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <!--  <span>Stream Routes</span>   --> 
+                <img src="./img/logo-navbar.png" title="Volver a la página de inicio" alt="" width="250">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact-us.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tourism.html">Turismo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./privacy-notice.html">Aviso de privacidad</a></li>
+                            <li><a class="dropdown-item" href="./mission-vision.html">Misión y visión</a></li>
+                            <li><a class="dropdown-item" href="./values.html">Valores y creencias</a></li>
+                            <li><a class="dropdown-item" href="./faq.html">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        
+    <body>     
         <!--IMAGEN-->
         <img src="./img/turismo-low.jpg" class="d-block w-100 portada" alt="turismo" data-aos="fade-right">
 
@@ -68,7 +67,7 @@
             <div class="row w-100 mx-auto mt-3">
                 <h1 class="p-3 fs-1 text-center">¡Visita Guanajuato!</h1>
             </div>
-            <div class="row mx-auto mb-3 alternative" data-aos="zoom-in">
+            <div class="row mx-auto mb-3 dark-theme" data-aos="zoom-in">
                 <div class="row mx-auto">
                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -85,62 +84,82 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="3000">
-                                <img src="./img/lugar-callejon-beso-low.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-callejon">
+                                    <img src="./img/lugar-callejon-beso-low.jpg" class="img-carrusel" alt="..." style="cursor: pointer;">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Callejón del Beso</h5>
                                     <!--<p>Some representative placeholder content for the first slide.</p> -->
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="./img/lugar-alhondiga-low.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-alhondiga">
+                                    <img src="./img/lugar-alhondiga-low.jpg" class="img-carrusel" alt="...">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Alhóndiga de Granaditas</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="./img/lugar-minas-low.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-minas">
+                                    <img src="./img/lugar-minas-low.jpg" class="img-carrusel" alt="...">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Minas</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="./img/lugar-palacio-low.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-palacio">
+                                    <img src="./img/lugar-palacio-low.jpg" class="img-carrusel" alt="...">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Palacio de Gobierno</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="./img/lugar-teatro-juarez-low.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-teatro">
+                                    <img src="./img/lugar-teatro-juarez-low.jpg" class="img-carrusel" alt="...">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Teatro Juárez</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="./img/lugar-universidad-gto.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-universidad">
+                                    <img src="./img/lugar-universidad-gto.jpg" class="img-carrusel" alt="...">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Universidad de Guanajuato</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="./img/lugar-casa-conde-rul.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-casa-conde">
+                                    <img src="./img/lugar-casa-conde-rul.jpg" class="img-carrusel" alt="...">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Casa del Conde Rul</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="./img/lugar-parque-bicentenario.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-parque-bicentenario">
+                                    <img src="./img/lugar-parque-bicentenario.jpg" class="img-carrusel" alt="...">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Parque Bicentenario</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="./img/lugar-puente-campanero-low.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-puente">
+                                    <img src="./img/lugar-puente-campanero-low.jpg" class="img-carrusel" alt="...">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Puente del Campanero</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="./img/lugar-sierra-santa-rosa-low.jpg" class="img-carrusel" alt="...">
+                                <a href="#section-sierra">
+                                    <img src="./img/lugar-sierra-santa-rosa-low.jpg" class="img-carrusel" alt="...">
+                                </a>
                                 <div class="carousel-caption">
                                     <h5>Sierra de Santa Rosa</h5>
                                 </div>
@@ -159,13 +178,222 @@
             </div>
         </section>
 
-        <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
-            <p class="d-flex fs-5 align-items-center justify-content-center px-3 pt-3">© 2023 Copyright: Stream Routes</p>
-            <div id="iconos" class="d-flex align-items-center justify-content-center">
-                <a href="https://www.instagram.com/stream_routes/" title="¡Paseate por nuestro Instagram!" target="_blank"><i class="bi bi-instagram"></i></a>  
-                <a href="mailto:s20120154@alumnos.itsur.edu.mx" title="¡Comunícate con nosotros!" target="_blank"><i class="bi bi-envelope-at"></i></a>
-            </div>
-        </footer>
+        <!--CALLEJÓN DEL BESO-->
+        <section id="section-callejon" data-aos="fade-up" class="row w-100 mx-auto text-center pt-3 pb-5 light-theme mb-5">
+            <h1 class="py-3 fs-1">Callejón del Beso</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <img src="./img/lugar-callejon-beso-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
+                    El <b>Callejón del beso</b> fue testigo de una romántica historia. Cuenta la leyenda que antigüamente en tan pegadas casas vivian dos enamorados:
+                    Ana, una rica española que habitaba al lado izquierdo, y Carlos, un pobre minero que rentaba en la casa de lado derecho.
+                    <br><br>
+                    
+                    Al padre de Ana no le convenía que su hija se casara con un minero. Una noche, sorprendió a la joven pareja besándose, el padre de Ana, molesto,
+                    le advirtió a su hija que la mataría si los volvía a ver besándose. La siguiente noche pasó lo mismo, el padre de Ana no dijo nada y bajó a su recamara para tomar
+                    una daga y asesinar despidadamente a su hija. Carlos, enmudecido de espanto, otorga a su querida el último beso que fue en el dorso de la mano. Carlos
+                    se suicidó en la mina de La Valenciana después de ver partir a su amor eterno.
+                    <br><br>
+
+                    Ahora, todas las parejas de enamorados que visitan el lugar deben besarse en el tercer escalón que está pintado de rojo, sino se llevarán siete años de mala suerte.
+                    El Callejón del Beso siempre se encuentra abierto al ser un lugar público y no tiene ningún costo.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!--ALHÓNDIGA DE GRANADITAS-->
+        <section id="section-alhondiga" data-aos="fade-up" class="row w-100 mx-auto text-center py-4 dark-theme">
+            <h1 class="p-3 fs-1">Alhóndiga de Granaditas</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start dark-theme">
+                    Un punto turístico que no te puedes perder es la <b>Alhóndiga de granaditas</b>, imponente construcción que fue eregida a principios del siglo XIX para que funcionara
+                    como un almacén, central de abasto o fuerte.
+                    <br><br>
+                    
+                    En plena época de la Independencia, siendo más exactos en octubre de 1811, algunos líderes del movimiento insurgente: Miguel Hidalgo, Juan Aldama, Ignacio Allende y Mariano Jiménez, 
+                    fueron capturados, decapitados y sus cabezas colgadas en cada esquina de la Alhóndiga para sembrar el miedo entre la población y demostrar a todos los insurgentes lo que les podría suceder.
+                    <br><br>
+
+                    La entrada general es de $49. Entran de forma gratuita menores de 13 años, jubilados, pensioados, personas de la 3ra edad, estudiantes y maestros con credencial vigente obligatoria.
+                </figcaption>
+                <img src="./img/lugar-alhondiga-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+            </figure>
+        </section>
+
+        <!--MINAS-->
+        <section id="section-minas" data-aos="fade-up" class="row w-100 mx-auto text-center py-4 light-theme mb-5">
+            <h1 class="p-3 fs-1">Minas</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <img src="./img/lugar-minas-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem quod modi officiis illo consequatur veritatis itaque? Doloremque sit cumque enim, sint, 
+                    totam, quidem obcaecati harum sunt recusandae itaque officia!
+                    <br><br>
+                    
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique atque illo odit, qui minus odio possimus sit dolore sunt delectus deserunt ea quibusdam et dicta ipsum. 
+                    Impedit facilis quod molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fuga placeat molestiae ex assumenda quae impedit ipsum. Quaerat, corporis debitis 
+                    similique maiores nesciunt laudantium culpa optio voluptatem odio labore quae.
+                    <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam. Amet, iste porro? Officiis quaerat iure modi omnis recusandae, ipsam, neque illo molestiae, possimus 
+                    sequi accusamus voluptas in quisquam libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe enim, animi repellendus ut nisi excepturi, neque minus ad voluptatum 
+                    molestiae aperiam sapiente commodi facilis, numquam maxime! Placeat, ex ut!
+                </figcaption>
+            </figure>
+        </section>
+
+        <!--PALACIO DE GOBIERNO-->
+        <section id="section-palacio" data-aos="fade-up" class="row w-100 mx-auto text-center py-4 dark-theme">
+            <h1 class="p-3 fs-1">Palacio de Gobierno</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start dark-theme">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem quod modi officiis illo consequatur veritatis itaque? Doloremque sit cumque enim, sint, 
+                    totam, quidem obcaecati harum sunt recusandae itaque officia!
+                    <br><br>
+                    
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique atque illo odit, qui minus odio possimus sit dolore sunt delectus deserunt ea quibusdam et dicta ipsum. 
+                    Impedit facilis quod molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fuga placeat molestiae ex assumenda quae impedit ipsum. Quaerat, corporis debitis 
+                    similique maiores nesciunt laudantium culpa optio voluptatem odio labore quae.
+                    <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam. Amet, iste porro? Officiis quaerat iure modi omnis recusandae, ipsam, neque illo molestiae, possimus 
+                    sequi accusamus voluptas in quisquam libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe enim, animi repellendus ut nisi excepturi, neque minus ad voluptatum 
+                    molestiae aperiam sapiente commodi facilis, numquam maxime! Placeat, ex ut!
+                </figcaption>
+                <img src="./img/lugar-palacio-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+            </figure>
+        </section>
+
+        <!--TEATRO JUÁREZ-->
+        <section id="section-teatro" data-aos="fade-up" class="row w-100 mx-auto text-center py-4 light-theme mb-5">
+            <h1 class="p-3 fs-1">Teatro Juárez</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <img src="./img/lugar-teatro-juarez-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem quod modi officiis illo consequatur veritatis itaque? Doloremque sit cumque enim, sint, 
+                    totam, quidem obcaecati harum sunt recusandae itaque officia!
+                    <br><br>
+                    
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique atque illo odit, qui minus odio possimus sit dolore sunt delectus deserunt ea quibusdam et dicta ipsum. 
+                    Impedit facilis quod molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fuga placeat molestiae ex assumenda quae impedit ipsum. Quaerat, corporis debitis 
+                    similique maiores nesciunt laudantium culpa optio voluptatem odio labore quae.
+                    <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam. Amet, iste porro? Officiis quaerat iure modi omnis recusandae, ipsam, neque illo molestiae, possimus 
+                    sequi accusamus voluptas in quisquam libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe enim, animi repellendus ut nisi excepturi, neque minus ad voluptatum 
+                    molestiae aperiam sapiente commodi facilis, numquam maxime! Placeat, ex ut!
+                </figcaption>
+            </figure>
+        </section>
+
+        <!--UNIVERSIDAD DE GUANAJUATO-->
+        <section id="section-universidad" data-aos="fade-up" class="row w-100 mx-auto text-center py-4 dark-theme">
+            <h1 class="p-3 fs-1">Universidad de Guanajuato</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start dark-theme">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem quod modi officiis illo consequatur veritatis itaque? Doloremque sit cumque enim, sint, 
+                    totam, quidem obcaecati harum sunt recusandae itaque officia!
+                    <br><br>
+                    
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique atque illo odit, qui minus odio possimus sit dolore sunt delectus deserunt ea quibusdam et dicta ipsum. 
+                    Impedit facilis quod molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fuga placeat molestiae ex assumenda quae impedit ipsum. Quaerat, corporis debitis 
+                    similique maiores nesciunt laudantium culpa optio voluptatem odio labore quae.
+                    <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam. Amet, iste porro? Officiis quaerat iure modi omnis recusandae, ipsam, neque illo molestiae, possimus 
+                    sequi accusamus voluptas in quisquam libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe enim, animi repellendus ut nisi excepturi, neque minus ad voluptatum 
+                    molestiae aperiam sapiente commodi facilis, numquam maxime! Placeat, ex ut!
+                </figcaption>
+                <img src="./img/lugar-universidad-gto.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+            </figure>
+        </section>
+
+        <!--CASA DEL CONDE RUL-->
+        <section id="section-casa-conde" data-aos="fade-up" class="row w-100 mx-auto text-center py-4 light-theme mb-5">
+            <h1 class="p-3 fs-1">Casa del Conde Rul</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <img src="./img/lugar-casa-conde-rul.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem quod modi officiis illo consequatur veritatis itaque? Doloremque sit cumque enim, sint, 
+                    totam, quidem obcaecati harum sunt recusandae itaque officia!
+                    <br><br>
+                    
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique atque illo odit, qui minus odio possimus sit dolore sunt delectus deserunt ea quibusdam et dicta ipsum. 
+                    Impedit facilis quod molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fuga placeat molestiae ex assumenda quae impedit ipsum. Quaerat, corporis debitis 
+                    similique maiores nesciunt laudantium culpa optio voluptatem odio labore quae.
+                    <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam. Amet, iste porro? Officiis quaerat iure modi omnis recusandae, ipsam, neque illo molestiae, possimus 
+                    sequi accusamus voluptas in quisquam libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe enim, animi repellendus ut nisi excepturi, neque minus ad voluptatum 
+                    molestiae aperiam sapiente commodi facilis, numquam maxime! Placeat, ex ut!
+                </figcaption>
+            </figure>
+        </section>
+
+        <!--PARQUE BICENTENARIO-->
+        <section id="section-parque-bicentenario" data-aos="fade-up" class="row w-100 mx-auto text-center py-4 dark-theme">
+            <h1 class="p-3 fs-1">Parque Bicentenario</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start dark-theme">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem quod modi officiis illo consequatur veritatis itaque? Doloremque sit cumque enim, sint, 
+                    totam, quidem obcaecati harum sunt recusandae itaque officia!
+                    <br><br>
+                    
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique atque illo odit, qui minus odio possimus sit dolore sunt delectus deserunt ea quibusdam et dicta ipsum. 
+                    Impedit facilis quod molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fuga placeat molestiae ex assumenda quae impedit ipsum. Quaerat, corporis debitis 
+                    similique maiores nesciunt laudantium culpa optio voluptatem odio labore quae.
+                    <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam. Amet, iste porro? Officiis quaerat iure modi omnis recusandae, ipsam, neque illo molestiae, possimus 
+                    sequi accusamus voluptas in quisquam libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe enim, animi repellendus ut nisi excepturi, neque minus ad voluptatum 
+                    molestiae aperiam sapiente commodi facilis, numquam maxime! Placeat, ex ut!
+                </figcaption>
+                <img src="./img/lugar-parque-bicentenario.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+            </figure>
+        </section>
+
+        <!--PUENTE DEL CAMPANERO-->
+        <section id="section-puente-campanero" data-aos="fade-up" class="row w-100 mx-auto text-center py-4 light-theme mb-5">
+            <h1 class="p-3 fs-1">Puente del Campanero</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <img src="./img/lugar-puente-campanero-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem quod modi officiis illo consequatur veritatis itaque? Doloremque sit cumque enim, sint, 
+                    totam, quidem obcaecati harum sunt recusandae itaque officia!
+                    <br><br>
+                    
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique atque illo odit, qui minus odio possimus sit dolore sunt delectus deserunt ea quibusdam et dicta ipsum. 
+                    Impedit facilis quod molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fuga placeat molestiae ex assumenda quae impedit ipsum. Quaerat, corporis debitis 
+                    similique maiores nesciunt laudantium culpa optio voluptatem odio labore quae.
+                    <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam. Amet, iste porro? Officiis quaerat iure modi omnis recusandae, ipsam, neque illo molestiae, possimus 
+                    sequi accusamus voluptas in quisquam libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe enim, animi repellendus ut nisi excepturi, neque minus ad voluptatum 
+                    molestiae aperiam sapiente commodi facilis, numquam maxime! Placeat, ex ut!
+                </figcaption>
+            </figure>
+        </section>
+
+        <!--SIERRA DE SANTA ROSA-->
+        <section id="section-sierra" data-aos="fade-up" class="row w-100 mx-auto text-center py-4 dark-theme">
+            <h1 class="p-3 fs-1">Sierra de Santa Rosa</h1>
+            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
+                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start dark-theme">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem quod modi officiis illo consequatur veritatis itaque? Doloremque sit cumque enim, sint, 
+                    totam, quidem obcaecati harum sunt recusandae itaque officia!
+                    <br><br>
+                    
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique atque illo odit, qui minus odio possimus sit dolore sunt delectus deserunt ea quibusdam et dicta ipsum. 
+                    Impedit facilis quod molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fuga placeat molestiae ex assumenda quae impedit ipsum. Quaerat, corporis debitis 
+                    similique maiores nesciunt laudantium culpa optio voluptatem odio labore quae.
+                    <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam. Amet, iste porro? Officiis quaerat iure modi omnis recusandae, ipsam, neque illo molestiae, possimus 
+                    sequi accusamus voluptas in quisquam libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe enim, animi repellendus ut nisi excepturi, neque minus ad voluptatum 
+                    molestiae aperiam sapiente commodi facilis, numquam maxime! Placeat, ex ut!
+                </figcaption>
+                <img src="./img/lugar-sierra-santa-rosa-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+            </figure>
+        </section>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <!--Animate On Scroll-->
@@ -179,4 +407,12 @@
             );
         </script>
     </body>
+
+    <footer id="footer-light-theme" class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+        <p class="d-flex fs-5 align-items-center justify-content-center px-3 pt-3">© 2023 Copyright: Stream Routes</p>
+        <div id="iconos" class="d-flex align-items-center justify-content-center">
+            <a href="https://www.instagram.com/stream_routes/" title="¡Paseate por nuestro Instagram!" target="_blank"><i id="i-light-theme" class="bi bi-instagram"></i></a>  
+            <a href="mailto:s20120154@alumnos.itsur.edu.mx" title="¡Comunícate con nosotros!" target="_blank"><i id="i-light-theme" class="bi bi-envelope-at"></i></a>
+        </div>
+    </footer>
 </html>

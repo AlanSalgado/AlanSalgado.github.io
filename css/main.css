@@ -59,6 +59,12 @@ footer {
     min-height: 100px;
 }
 
+#footer-light-theme {
+    background-color: #FFF7E7;
+    color: #192833;
+    min-height: 100px;
+}
+
 i {
     font-size: 26px;
     padding: 0 16px;
@@ -68,6 +74,17 @@ i {
 }
 
 i:hover {
+    color: #D69212;
+}
+
+#i-light-theme {
+    font-size: 26px;
+    padding: 0 16px;
+    color: #192833;
+    transition: color 0.4s;
+}
+
+#i-light-theme:hover {
     color: #D69212;
 }
 
