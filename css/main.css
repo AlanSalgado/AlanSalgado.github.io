@@ -99,16 +99,8 @@ body {
 }
 
 .img-carrusel {
-    width: 60rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
+    max-height: 30rem;
 }
-
-.carousel-caption {
-    color: white;
-}
-
 
 
 body {
