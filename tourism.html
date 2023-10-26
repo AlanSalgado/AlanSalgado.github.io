@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     </head>
@@ -61,7 +62,7 @@
         <img src="./img/turismo-low.jpg" class="d-block w-100 portada" alt="turismo" data-aos="fade-right">
 
         <!--TURISMO-->
-        <section class="row w-100 mx-auto text-center pt-1 pb-5 light-theme">
+        <section class="row mx-auto text-center pt-1 light-theme">
             <div class="row w-75 mx-auto my-3" data-aos="fade-right">
                 <h1 class="p-3 fs-1 text-end">"... No hay que llegar primero, pero hay que saber llegar."</h1>
                 <h1 class="p-3 fs-4 text-end">- José Alfredo Jiménez</h1>
@@ -69,6 +70,7 @@
             <div class="row w-100 mx-auto mt-3">
                 <h1 class="p-3 fs-1 text-center">¡Visita Guanajuato!</h1>
             </div>
+
             <!-- Swiper -->
             <div class="swiper mySwiper" data-aos="fade-up">
                 <div class="swiper-wrapper">
@@ -143,353 +145,448 @@
                     <span style="margin-top: 1.90rem;"></span>
                 </div>
             </div>
-        </section>
+            
+            
+            <!-- <div class="row mx-auto mb-3 light-theme rounded-5" data-aos="zoom-in">
+                <div class="row mx-auto">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <a href="#callejon-del-beso">
+                                    <img src="./img/carrusel-callejon.jpg" class="img-carrusel" alt="..." style="cursor: pointer;">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Callejón del Beso</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="#alhondiga-de-granaditas">
+                                    <img src="./img/carrusel-alhondiga.jpg" class="img-carrusel" alt="...">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Alhóndiga de Granaditas</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="#minas">
+                                    <img src="./img/carrusel-minas.jpg" class="img-carrusel" alt="...">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Minas</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="#palacio-de-gobierno">
+                                    <img src="./img/carrusel-palacio.jpg" class="img-carrusel" alt="...">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Palacio de Gobierno</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="#teatro-juarez">
+                                    <img src="./img/carrusel-teatro.jpg" class="img-carrusel" alt="...">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Teatro Juárez</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="#universidad-guanajuato">
+                                    <img src="./img/carrusel-universidad.jpg" class="img-carrusel" alt="...">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Universidad de Guanajuato</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="#casa-conde-rul">
+                                    <img src="./img/carrusel-casa.jpg" class="img-carrusel" alt="...">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Casa del Conde Rul</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="#parque-bicentenario">
+                                    <img src="./img/carrusel-parque.jpg" class="img-carrusel" alt="...">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Parque Bicentenario</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="#puente-campanero">
+                                    <img src="./img/carrusel-puente.jpg" class="img-carrusel" alt="...">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Puente del Campanero</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="#sierra-santa-rosa">
+                                    <img src="./img/carrusel-sierra.jpg" class="img-carrusel" alt="...">
+                                </a>
+                                <div class="carousel-caption">
+                                    <h5>Sierra de Santa Rosa</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev w-50" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next w-50" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
 
         <!--CALLEJÓN DEL BESO-->
-        <a id="callejon-del-beso"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center light-theme">
-            <div class="container text-center" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Callejón del Beso</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-callejon-beso-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> Callejón del Beso, Centro, Guanajuato, Gto. 36000</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Siempre abierto</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> Sin costo</i></div>
-                          </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4">
-                            El <b>Callejón del beso</b> fue testigo de una romántica historia. Cuenta la leyenda que antigüamente en tan pegadas casas vivian dos enamorados:
-                            Ana, una rica española que habitaba al lado izquierdo, y Carlos, un pobre minero que rentaba en la casa de lado derecho.
-                            <br><br>
-                            
-                            Al padre de Ana no le convenía que su hija se casara con un minero. Una noche, sorprendió a la joven pareja besándose, el padre de Ana, molesto,
-                            le advirtió a su hija que la mataría si los volvía a ver besándose. La siguiente noche pasó lo mismo, el padre de Ana no dijo nada y bajó a su recamara para tomar
-                            una daga y asesinar despidadamente a su hija. Carlos, enmudecido de espanto, otorga a su querida el último beso que fue en el dorso de la mano. Carlos
-                            se suicidó en la mina de La Valenciana después de ver partir a su amor eterno.
-                            <br><br>
-        
-                            Ahora, todas las parejas de enamorados que visitan el lugar deben besarse en el tercer escalón que está pintado de rojo, sino se llevarán siete años de mala suerte.
-                            El Callejón del Beso siempre se encuentra abierto al ser un lugar público y no tiene ningún costo.
-                        </figcaption>
-                    </div>
+        <a ></a>
+        <div id="callejon-del-beso" class="container text-center py-5" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Callejón del Beso</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-callejon-beso-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> Callejón del Beso, Centro, Guanajuato, Gto. 36000</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Siempre abierto</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> Sin costo</i></div>
+                      </div>
+                </div>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4">
+                        El <b>Callejón del beso</b> fue testigo de una romántica historia. Cuenta la leyenda que antigüamente en tan pegadas casas vivian dos enamorados:
+                        Ana, una rica española que habitaba al lado izquierdo, y Carlos, un pobre minero que rentaba en la casa de lado derecho.
+                        <br><br>
+                        
+                        Al padre de Ana no le convenía que su hija se casara con un minero. Una noche, sorprendió a la joven pareja besándose, el padre de Ana, molesto,
+                        le advirtió a su hija que la mataría si los volvía a ver besándose. La siguiente noche pasó lo mismo, el padre de Ana no dijo nada y bajó a su recamara para tomar
+                        una daga y asesinar despidadamente a su hija. Carlos, enmudecido de espanto, otorga a su querida el último beso que fue en el dorso de la mano. Carlos
+                        se suicidó en la mina de La Valenciana después de ver partir a su amor eterno.
+                        <br><br>
+    
+                        Ahora, todas las parejas de enamorados que visitan el lugar deben besarse en el tercer escalón que está pintado de rojo, sino se llevarán siete años de mala suerte.
+                        El Callejón del Beso siempre se encuentra abierto al ser un lugar público y no tiene ningún costo.
+                    </figcaption>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--ALHÓNDIGA DE GRANADITAS-->
-        <a id="alhondiga-de-granaditas"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center dark-theme">
-            <div class="container text-center dark-theme" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Alhóndiga de Granaditas</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-alhondiga-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> Calle Mendizabal No. 6, Centro, Guanajuato, Gto. 36000</i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Martes a Sábado (10:00 - 18:00) <br> Domingo (10:00 - 15:00) </i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> $49.00 - $60.00 aprox. </i></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
-                            Un punto turístico que no te puedes perder es la <b>Alhóndiga de granaditas</b>, imponente construcción que fue eregida a principios del siglo XIX para que funcionara
-                            como un almacén, central de abasto o fuerte.
-                            <br><br>
-                            
-                            En plena época de la Independencia, siendo más exactos en octubre de 1811, algunos líderes del movimiento insurgente: Miguel Hidalgo, Juan Aldama, Ignacio Allende y Mariano Jiménez, 
-                            fueron capturados, decapitados y sus cabezas colgadas en cada esquina de la Alhóndiga para sembrar el miedo entre la población y demostrar a todos los insurgentes lo que les podría suceder.
-                            <br><br>
-    
-                            Para el año de 1949, el edificio se convirtió en el Museo de la Alhóndiga de Granaditas. Actualmente, se encuentra un acervo con más de 9 mil objetos con un valor histórico y culturas incalculable de entre
-                            los que destacan murales alusivos a la época de Independencia.
-                            <br><br>
-    
-                            La entrada general es de $49. Entran de forma gratuita menores de 13 años, jubilados, pensioados, personas de la 3ra edad, estudiantes y maestros con credencial vigente obligatoria.
-                        </figcaption>
+        <a ></a>
+        <div id="alhondiga-de-granaditas" class="container text-center py-5 dark-theme" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Alhóndiga de Granaditas</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-alhondiga-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> Calle Mendizabal No. 6, Centro, Guanajuato, Gto. 36000</i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Martes a Sábado (10:00 - 18:00) <br> Domingo (10:00 - 15:00) </i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> $49.00 - $60.00 aprox. </i></div>
                     </div>
                 </div>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
+                        Un punto turístico que no te puedes perder es la <b>Alhóndiga de granaditas</b>, imponente construcción que fue eregida a principios del siglo XIX para que funcionara
+                        como un almacén, central de abasto o fuerte.
+                        <br><br>
+                        
+                        En plena época de la Independencia, siendo más exactos en octubre de 1811, algunos líderes del movimiento insurgente: Miguel Hidalgo, Juan Aldama, Ignacio Allende y Mariano Jiménez, 
+                        fueron capturados, decapitados y sus cabezas colgadas en cada esquina de la Alhóndiga para sembrar el miedo entre la población y demostrar a todos los insurgentes lo que les podría suceder.
+                        <br><br>
+
+                        Para el año de 1949, el edificio se convirtió en el Museo de la Alhóndiga de Granaditas. Actualmente, se encuentra un acervo con más de 9 mil objetos con un valor histórico y culturas incalculable de entre
+                        los que destacan murales alusivos a la época de Independencia.
+                        <br><br>
+
+                        La entrada general es de $49. Entran de forma gratuita menores de 13 años, jubilados, pensioados, personas de la 3ra edad, estudiantes y maestros con credencial vigente obligatoria.
+                    </figcaption>
+                </div>
             </div>
-        </section>
+        </div>
 
         <!--MINAS-->
-        <a id="minas"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center light-theme">
-            <div class="container text-center" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Minas</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-minas-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> Carretera Guanajuato - Cerro del Cubilete Mineral de Valenciana</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Viernes y Sábado (10:00 - 13:00) <br> Domingo (10:00 - 13:00)</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> $30.00 - $50.00</i></div>
-                          </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4">
-                            Guanajuato es una ciudad con una muy antigua tradición minera. Si visitas Guanajuato no olvider visitar algunas de las tantas <b>Minas</b> de la zona 
-                            abiertas al público.
-                            <br><br>
-    
-                            A finales del siglo XVIII, Guanajuato se convirtió en uno de los principales productores e plata a nivel mundial; en torno a las antiguas minas desoladas, 
-                            giran un sinfín de historias y mitos fantásticos. Algunas de sus minas más famosas son: Bocamina de San Ramón, El Nopal (la misma de la fotografía), Mina 
-                            La Valenciana, Mina de Cata y Mina de Rayas por mencionar algunas.
-                            <br><br>
-    
-                            Muchas de estas minas son utilizadas para fines didácticos y visitas guiadas para los turistas. Cuentan con guías capacitados y no te preocupes al adentrarte
-                            en las entrañas oscuras del subterráneo, las mismas minas ofrecen un seguro a los viajeros en caso de accidentes.
-                            <br>
-                            Las visitas guiadas duran aproximadamente 30 minutos y su costo ronda los $30.00 y $50.00 pesos mexicanos, un precio bastante accesible para que disfrutes tu estancia en la capital.
-                        </figcaption>
-                    </div>
+        <a ></a>
+        <div id="minas" class="container text-center py-5" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Minas</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-minas-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> Carretera Guanajuato - Cerro del Cubilete Mineral de Valenciana</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Viernes y Sábado (10:00 - 13:00) <br> Domingo (10:00 - 13:00)</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> $30.00 - $50.00</i></div>
+                      </div>
+                </div>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4">
+                        Guanajuato es una ciudad con una muy antigua tradición minera. Si visitas Guanajuato no olvider visitar algunas de las tantas <b>Minas</b> de la zona 
+                        abiertas al público.
+                        <br><br>
+
+                        A finales del siglo XVIII, Guanajuato se convirtió en uno de los principales productores e plata a nivel mundial; en torno a las antiguas minas desoladas, 
+                        giran un sinfín de historias y mitos fantásticos. Algunas de sus minas más famosas son: Bocamina de San Ramón, El Nopal (la misma de la fotografía), Mina 
+                        La Valenciana, Mina de Cata y Mina de Rayas por mencionar algunas.
+                        <br><br>
+
+                        Muchas de estas minas son utilizadas para fines didácticos y visitas guiadas para los turistas. Cuentan con guías capacitados y no te preocupes al adentrarte
+                        en las entrañas oscuras del subterráneo, las mismas minas ofrecen un seguro a los viajeros en caso de accidentes.
+                        <br>
+                        Las visitas guiadas duran aproximadamente 30 minutos y su costo ronda los $30.00 y $50.00 pesos mexicanos, un precio bastante accesible para que disfrutes tu estancia en la capital.
+                    </figcaption>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--PALACIO DE GOBIERNO-->
-        <a id="palacio-de-gobierno"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center dark-theme">
-            <div class="container text-center dark-theme" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Palacio de Gobierno</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-palacio-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> P.º de La Presa 103 Centro, Guanajuato, Gto. 36000</i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Lunes a Viernes (8:00 - 18:00)</i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> $10.00 - $30.00 </i></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
-                            Los capitalinos Guanajuatenses pueden presumir y sentirse orgullosos de tener uno de los palacios legislativos más bellos de México como lo es 
-                            el <b>Palacio de Gobierno de Guanajuato</b>. La fachada del edificio es estilo neoclásico, el interior tiene una influencia al Art Nouveau del siglo XIV.
-                            <br><br>
-                            
-                            El edificio fue construido en 1753 por D. Francisco Matías de Busto y Moya, primer marqués de San Clemente. Para el año de 1831, a través de un decreto del 
-                            Gobierno del Estado de Guanajuato, el edifico fue declarado como Sede del Congreso. Este edificio, fue demolido para el año de 1897 y remodelado, terminando
-                            su contrucción en 1903. ¡Vaya historia tiene este inmuueble! ¿No es así?.
-                            <br><br>
-    
-                            A partir del año 2017, se inauguró como un museo abierto al público. Puedes entrar al palacio por la módica cantidad de $30.00 pesos mexicanos, o bien, si eres
-                            estudiante, discapacitado, persona de la 3ra edad o cuentas con la tarjeta Impulso, tu acceso se reduce a pagar $10.00 pesos.
-                        </figcaption>
+        <a ></a>
+        <div id="palacio-de-gobierno" class="container text-center py-5 dark-theme" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Palacio de Gobierno</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-palacio-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> P.º de La Presa 103 Centro, Guanajuato, Gto. 36000</i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Lunes a Viernes (8:00 - 18:00)</i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> $10.00 - $30.00 </i></div>
                     </div>
                 </div>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
+                        Los capitalinos Guanajuatenses pueden presumir y sentirse orgullosos de tener uno de los palacios legislativos más bellos de México como lo es 
+                        el <b>Palacio de Gobierno de Guanajuato</b>. La fachada del edificio es estilo neoclásico, el interior tiene una influencia al Art Nouveau del siglo XIV.
+                        <br><br>
+                        
+                        El edificio fue construido en 1753 por D. Francisco Matías de Busto y Moya, primer marqués de San Clemente. Para el año de 1831, a través de un decreto del 
+                        Gobierno del Estado de Guanajuato, el edifico fue declarado como Sede del Congreso. Este edificio, fue demolido para el año de 1897 y remodelado, terminando
+                        su contrucción en 1903. ¡Vaya historia tiene este inmuueble! ¿No es así?.
+                        <br><br>
+
+                        A partir del año 2017, se inauguró como un museo abierto al público. Puedes entrar al palacio por la módica cantidad de $30.00 pesos mexicanos, o bien, si eres
+                        estudiante, discapacitado, persona de la 3ra edad o cuentas con la tarjeta Impulso, tu acceso se reduce a pagar $10.00 pesos.
+                    </figcaption>
+                </div>
             </div>
-        </section>
+        </div>
 
         <!--TEATRO JUÁREZ-->
-        <a id="teatro-juarez"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center light-theme">
-            <div class="container text-center" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Teatro Juárez</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-teatro-juarez-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> De Sopena 10, Centro, Guanajuato, Gto. 36000</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Lunes a Sábado (10:00 - 20:00) <br> Domingo (10:00 - 18:00)</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> $15.00 - $35.00</i></div>
-                          </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4">
-                            Ir a Guanajuato y no haber visitado el imponente <b>Teatro Juárez</b> es como si nunca hubieras ido a Guanajuato (al menos visitarlo por fuera cuenta).
-                            Este recinto es uno de los teatros más reconocidos en México y el mundo. Su época auge fue durante el Porfiriato y la Revolución Mexicana, a finales del siglo XIX e 
-                            inicios del siglo XX. Es una joya de la arquitectura a cargo de los maestros José Noriega, Antonio Rivas Mercado y Alberto Malo, siendo el primero quien creó el diseño 
-                            original y los últimos dos arquitectos quienes con el paso del tiempo remodelaron el aspecto del edificio tanto en el exterior como en el interior.
-                            <br><br>
-    
-                            En este hermoso recinto se realizan actividades artísticas como ballet, obras de teatro, presentaciones musicales, exposiciones de pintura y fotografía. Por si fuera poco,
-                            el Teatro Juárez ha sido sido del Festival Internacional Cervantino desde 1972. Si necesitas contexto, el Festival Cervantino es un evento cultural con gran impacto en México
-                            inclusive latinoamérica, en el cual se realizan grandes espectáculos de música, teatro, danza, literatura y artes plásticas.
-                            <br><br>
-    
-                            El edificio es bellísimo y magnífico tanto por fuera como dentro, en el interior hay cinco niveles con barandales de hierro, muebles con tapíz rojo y bordado en oro, muy populares de la época 
-                            del Porfiriato. El aforo es de aproximadamente 800 personas. El costo al público ronda los $35.00 pesos, si cuentas con tarjeta Impulso o eres estudiante, accedes a un descuento para 
-                            pagar $15.00 pesos mexicanos. Cabe mencionar que para festivales y presentaciones el precio varía.
-                        </figcaption>
-                    </div>
+        <a ></a>
+        <div id="teatro-juarez" class="container text-center py-5" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Teatro Juárez</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-teatro-juarez-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> De Sopena 10, Centro, Guanajuato, Gto. 36000</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Lunes a Sábado (10:00 - 20:00) <br> Domingo (10:00 - 18:00)</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> $15.00 - $35.00</i></div>
+                      </div>
+                </div>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4">
+                        Ir a Guanajuato y no haber visitado el imponente <b>Teatro Juárez</b> es como si nunca hubieras ido a Guanajuato (al menos visitarlo por fuera cuenta).
+                        Este recinto es uno de los teatros más reconocidos en México y el mundo. Su época auge fue durante el Porfiriato y la Revolución Mexicana, a finales del siglo XIX e 
+                        inicios del siglo XX. Es una joya de la arquitectura a cargo de los maestros José Noriega, Antonio Rivas Mercado y Alberto Malo, siendo el primero quien creó el diseño 
+                        original y los últimos dos arquitectos quienes con el paso del tiempo remodelaron el aspecto del edificio tanto en el exterior como en el interior.
+                        <br><br>
+
+                        En este hermoso recinto se realizan actividades artísticas como ballet, obras de teatro, presentaciones musicales, exposiciones de pintura y fotografía. Por si fuera poco,
+                        el Teatro Juárez ha sido sido del Festival Internacional Cervantino desde 1972. Si necesitas contexto, el Festival Cervantino es un evento cultural con gran impacto en México
+                        inclusive latinoamérica, en el cual se realizan grandes espectáculos de música, teatro, danza, literatura y artes plásticas.
+                        <br><br>
+
+                        El edificio es bellísimo y magnífico tanto por fuera como dentro, en el interior hay cinco niveles con barandales de hierro, muebles con tapíz rojo y bordado en oro, muy populares de la época 
+                        del Porfiriato. El aforo es de aproximadamente 800 personas. El costo al público ronda los $35.00 pesos, si cuentas con tarjeta Impulso o eres estudiante, accedes a un descuento para 
+                        pagar $15.00 pesos mexicanos. Cabe mencionar que para festivales y presentaciones el precio varía.
+                    </figcaption>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--UNIVERSIDAD DE GUANAJUATO-->
-        <a id="universidad-guanajuato"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center dark-theme">
-            <div class="container text-center dark-theme" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Universidad de Guanajuato</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-universidad-gto.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> C. Pedro Lascurain de Retana, Calzada de Guadalupe, Guanajuato, Gto. 36700</i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Martes a Viernes agendando visita (12:30 - 15:00) </i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> Sin Costo </i></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
-                            La <b>Universidad de Guanajuato</b> es la máxima casa de estudios de la capital. Sus fachada tan icónica ha aparecido incluso en películas, documentales y artículos
-                            de renombre. Es una universad pública autónoma y benemérita, dedicada a la educación de los niveles medio superior y superior, así como a la investigación en diversas
-                            áreas de conocimiento.
-                            <br><br>
-    
-                            Históricamente, tuvo como primer antecedente el Hospicio de la Santísima Trinidad fundado en 1732. En el año de 1945 obtuvo su nombre actual y para 1994, el Congreso del 
-                            Estado de Guanajuato le otorgó su autonomía universitaria. Está posicionada entre las mejores 20 universidades del país y en la número 1 a nivel estatal. Cuenta con más de 33 mil
-                            alumnos matriculados. Cuenta con 69 carreras, 54 programas de posgrado y 17 de doctorado. Tiene presencia en 12 municipios del estado.
-                            <br><br>
-    
-                            Las visitas guiadas para el público en general son un servicio gratuito, por lo que puedes recorrer el emblemático campus acompañado de un guía
-                            capacitado. Los servicios son de martes a viernes de 12:30 pm a 3:00 pm. Es necesario agendar la cita con mínimo 15 días de anticipación, asi como 
-                            enviar una solicitud a través de su página oficial.
-                        </figcaption>
+        <a ></a>
+        <div id="universidad-guanajuato" class="container text-center py-5 dark-theme" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Universidad de Guanajuato</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-universidad-gto.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> C. Pedro Lascurain de Retana, Calzada de Guadalupe, Guanajuato, Gto. 36700</i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Martes a Viernes agendando visita (12:30 - 15:00) </i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> Sin Costo </i></div>
                     </div>
                 </div>
-            </div> 
-        </section>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
+                        La <b>Universidad de Guanajuato</b> es la máxima casa de estudios de la capital. Sus fachada tan icónica ha aparecido incluso en películas, documentales y artículos
+                        de renombre. Es una universad pública autónoma y benemérita, dedicada a la educación de los niveles medio superior y superior, así como a la investigación en diversas
+                        áreas de conocimiento.
+                        <br><br>
+
+                        Históricamente, tuvo como primer antecedente el Hospicio de la Santísima Trinidad fundado en 1732. En el año de 1945 obtuvo su nombre actual y para 1994, el Congreso del 
+                        Estado de Guanajuato le otorgó su autonomía universitaria. Está posicionada entre las mejores 20 universidades del país y en la número 1 a nivel estatal. Cuenta con más de 33 mil
+                        alumnos matriculados. Cuenta con 69 carreras, 54 programas de posgrado y 17 de doctorado. Tiene presencia en 12 municipios del estado.
+                        <br><br>
+
+                        Las visitas guiadas para el público en general son un servicio gratuito, por lo que puedes recorrer el emblemático campus acompañado de un guía
+                        capacitado. Los servicios son de martes a viernes de 12:30 pm a 3:00 pm. Es necesario agendar la cita con mínimo 15 días de anticipación, asi como 
+                        enviar una solicitud a través de su página oficial.
+                    </figcaption>
+                </div>
+            </div>
+        </div>
 
         <!--CASA DEL CONDE RUL-->
-        <a id="casa-conde-rul"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center light-theme">
-            <div class="container text-center" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Casa del Conde Rul</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-casa-conde-rul.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> Av. Benito Juárez 8, Zona Centro, Guanajuato, Gto. 36000</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Martes a Domingo (10:00 - 16:30)</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> $15.00 - $30.00</i></div>
-                          </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4">
-                            La <b>Casa del Conde Rul</b> es una construcción atribuida al arquitecto Francisco Eduardo Tresguerras por allá en los años 1800. Al igual que el 
-                            Palacio de Gobierno, el estilo de este inmueble da aires de neoclásico. Esta inmensa mansión pertenecio a los condes Rul y Valenciana, importantes mineros 
-                            en la época del virreinato.
-                            <br><br>
-    
-                            A partir del año 2018, se estableció como un museo y punto turístico para el público general. El edificio cuenta en su interior con 15 salas de exhibición de arte,
-                            así como una capilla y comedor, donde es posible admirar piezas y arte alusivo a la Cultura de Guanajuato durante aquellos años del virreinato.
-                            <br>
-                            Este museo exhibe obras de artistas de talla nacional e internacional como lo son José María Velasco, Diego Rivera, José Chávez Morado, Feliciano Peñoa, Jesús Gallardo, entre otros.
-                            De entre las tantas obras y esculturas, destacan paisajes y pinturas al óleo realizadas por el artista Luis Nishizawa Flores.
-                            <br><br>
-    
-                            El costo al público es de $30.00 pesos mexicanos, proporcionando tu tarjeta impulso, identificación de persona de la 3ra edad o credencial de estudiante, el costo suele ser de $15.00 pesos mexicanos.
-                        </figcaption>
-                    </div>
+        <a ></a>
+        <div id="casa-conde-rul" class="container text-center py-5" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Casa del Conde Rul</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-casa-conde-rul.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> Av. Benito Juárez 8, Zona Centro, Guanajuato, Gto. 36000</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Martes a Domingo (10:00 - 16:30)</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> $15.00 - $30.00</i></div>
+                      </div>
+                </div>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4">
+                        La <b>Casa del Conde Rul</b> es una construcción atribuida al arquitecto Francisco Eduardo Tresguerras por allá en los años 1800. Al igual que el 
+                        Palacio de Gobierno, el estilo de este inmueble da aires de neoclásico. Esta inmensa mansión pertenecio a los condes Rul y Valenciana, importantes mineros 
+                        en la época del virreinato.
+                        <br><br>
+
+                        A partir del año 2018, se estableció como un museo y punto turístico para el público general. El edificio cuenta en su interior con 15 salas de exhibición de arte,
+                        así como una capilla y comedor, donde es posible admirar piezas y arte alusivo a la Cultura de Guanajuato durante aquellos años del virreinato.
+                        <br>
+                        Este museo exhibe obras de artistas de talla nacional e internacional como lo son José María Velasco, Diego Rivera, José Chávez Morado, Feliciano Peñoa, Jesús Gallardo, entre otros.
+                        De entre las tantas obras y esculturas, destacan paisajes y pinturas al óleo realizadas por el artista Luis Nishizawa Flores.
+                        <br><br>
+
+                        El costo al público es de $30.00 pesos mexicanos, proporcionando tu tarjeta impulso, identificación de persona de la 3ra edad o credencial de estudiante, el costo suele ser de $15.00 pesos mexicanos.
+                    </figcaption>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--PARQUE BICENTENARIO-->
-        <a id="parque-bicentenario"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center dark-theme">
-            <div class="container text-center dark-theme" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Parque Bicentenario</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-parque-bicentenario.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> Carretera de Cuota Km 3.8 Los Rodriguez, Silao, Gto. 36270</i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Martes a Domingo (11:00 - 18:00) </i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> $15.00 - $35.00 </i></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
-                            Si lo que quieres el alejarte un poco de la ciudad y prefieres pasar un tiempo en compañía de tu familia, entonces debería visitar el <b>Parque Bicentenario</b>, un complejo
-                            cultural y recreativo donde se llevan a cabo eventos y exposiciones relacionadas a la educación, cultura y entretenimiento. Como dato curioso, está ubicado entre las ciudades de 
-                            Silao, Guanajuato, Irapuato y León, en un punto estratégico para conectar estas 4 ciudades.
-                            <br><br>
-                            
-                            Recibe su nombre porque su construcción fue en conmemoriación del 200° Aniversario de la Independencia de México. Su contrucción comenzó en el año del 2009 y fue inaugurado en el 2010.
-                            Tiene una extensión territorial de 14.5 hectáreas y ofrece a sus visitantes espacios de la más alta calidad para recibir artistas de talla nacional e internacional.
-                            <br><br>
-    
-                            El costo para adultos es de $35.00 pesos mexicanos, mientras que para los pequeños y niños el precio para acceder es de $15.00 pesos.
-                        </figcaption>
+        <a ></a>
+        <div id="parque-bicentenario" class="container text-center py-5 dark-theme" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Parque Bicentenario</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-parque-bicentenario.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> Carretera de Cuota Km 3.8 Los Rodriguez, Silao, Gto. 36270</i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Martes a Domingo (11:00 - 18:00) </i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> $15.00 - $35.00 </i></div>
                     </div>
                 </div>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
+                        Si lo que quieres el alejarte un poco de la ciudad y prefieres pasar un tiempo en compañía de tu familia, entonces debería visitar el <b>Parque Bicentenario</b>, un complejo
+                        cultural y recreativo donde se llevan a cabo eventos y exposiciones relacionadas a la educación, cultura y entretenimiento. Como dato curioso, está ubicado entre las ciudades de 
+                        Silao, Guanajuato, Irapuato y León, en un punto estratégico para conectar estas 4 ciudades.
+                        <br><br>
+                        
+                        Recibe su nombre porque su construcción fue en conmemoriación del 200° Aniversario de la Independencia de México. Su contrucción comenzó en el año del 2009 y fue inaugurado en el 2010.
+                        Tiene una extensión territorial de 14.5 hectáreas y ofrece a sus visitantes espacios de la más alta calidad para recibir artistas de talla nacional e internacional.
+                        <br><br>
+
+                        El costo para adultos es de $35.00 pesos mexicanos, mientras que para los pequeños y niños el precio para acceder es de $15.00 pesos.
+                    </figcaption>
+                </div>
             </div>
-        </section>
+        </div>
 
         <!--PUENTE DEL CAMPANERO-->
-        <a id="puente-campanero"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center light-theme">
-            <div class="container text-center" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Puente del Campanero</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-puente-campanero.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> Andador Teatro Juárez s/n , Centro, Guanajuato, Gto. 36000</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Abierto todos los días</i></div>
-                            <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> Sin Costo</i></div>
-                          </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4">
-                            Si quieres ir a un lugar bastante singular y único, ¿por qué no visitas el <b>Puente del Campanero</b>? posiblemente te estarás preguntando
-                            ¿Qué tiene de especial un puente que no está sobre algún rio, sino por una calle? bueno, este puente tiene bastantes historias que contar. Esta cuesta 
-                            debe a su fama ya que por ahí bajó el Padre de la Patria Miguel Hidalgo y Costilla junto con su ejercito insurgente un día 28 de septiembre de 1810.
-                            <br><br>
-    
-                            Como tal, el icónico puente se construyó en el año de 1877 para acceder a las casas que fueron elevadas para mejorar el transito víal de la zona. Un problema
-                            que surgió al elevar las casas fue que la calle quedó mucho más estrecha por lo que era muy probable que los carruajes sufrieran accidentes, es por ello que cuenta la 
-                            leyenda que una persona de la época solía tocar una campana para anunciar que se acercaban carruajes y evitar accidentes, de ahí el nombre.
-                            <br><br>
-    
-                            Actualmente, la calle del Campanero y el mismo puente están rodeados de restaurantes, cafeterías y hostales. Además, el puente se encuentra cerca del teatro Cervantes 
-                            y de la plaza Allende. Así que podríamso decir con toda seguridad que lo que cuesta no es visitar el puente, lo que cuesta es resistirse a degustar un cafecito sobre el puente.
-                        </figcaption>
-                    </div>
+        <a ></a>
+        <div id="puente-campanero" class="container text-center py-5" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Puente del Campanero</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-puente-campanero-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-geo-alt-fill fs-5"> Andador Teatro Juárez s/n , Centro, Guanajuato, Gto. 36000</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-clock fs-5"> Abierto todos los días</i></div>
+                        <div class="p-1"><i id="i-light-theme" class="bi bi-currency-dollar fs-5"> Sin Costo</i></div>
+                      </div>
+                </div>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4">
+                        Si quieres ir a un lugar bastante singular y único, ¿por qué no visitas el <b>Puente del Campanero</b>? posiblemente te estarás preguntando
+                        ¿Qué tiene de especial un puente que no está sobre algún rio, sino por una calle? bueno, este puente tiene bastantes historias que contar. Esta cuesta 
+                        debe a su fama ya que por ahí bajó el Padre de la Patria Miguel Hidalgo y Costilla junto con su ejercito insurgente un día 28 de septiembre de 1810.
+                        <br><br>
+
+                        Como tal, el icónico puente se construyó en el año de 1877 para acceder a las casas que fueron elevadas para mejorar el transito víal de la zona. Un problema
+                        que surgió al elevar las casas fue que la calle quedó mucho más estrecha por lo que era muy probable que los carruajes sufrieran accidentes, es por ello que cuenta la 
+                        leyenda que una persona de la época solía tocar una campana para anunciar que se acercaban carruajes y evitar accidentes, de ahí el nombre.
+                        <br><br>
+
+                        Actualmente, la calle del Campanero y el mismo puente están rodeados de restaurantes, cafeterías y hostales. Además, el puente se encuentra cerca del teatro Cervantes 
+                        y de la plaza Allende. Así que podríamso decir con toda seguridad que lo que cuesta no es visitar el puente, lo que cuesta es resistirse a degustar un cafecito sobre el puente.
+                    </figcaption>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--SIERRA DE SANTA ROSA-->
-        <a id="sierra-santa-rosa"></a>
-        <section data-aos="fade-up" class="py-5 row w-100 mx-auto text-center dark-theme">
-            <div class="container text-center dark-theme" data-aos="fade-up">
-                <h1 class="fs-1 pt-5 pb-3">Sierra de Santa Rosa</h1>
-                <div class="row pb-2">
-                    <div class="col-xl-4">
-                        <img src="./img/lugar-sierra-santa-rosa-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                        <div class="d-flex flex-column mb-3 justify-content-start">
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> Guanajuato, Gto. 36220 </i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Abierto todos los días</i></div>
-                            <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> Sin Costo </i></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
-                            Afortunados aquellos que anhelan visitar Guanajuato pero aman estar alejados de la sociedad y la tecnología porque pueden visitar 
-                            la <b> Sierra de Santa Rosa</b> que abarca más de 113 mil hectáreas de pura sierra. Así mismo, si quieres tener la orientación de algún guía experimentado
-                            puedes asistir al Parque Ecológico Xúmu, famoso por sus enormes árboles de encino y por su niebla matutina.
-                            <br><br>
-    
-                            La Cuenca de la Esperanza es otra área natural aledaña de más de 1,800 hectáreas de bosque. Si quieres divisar áves, creenos que no encontrarás un mejor
-                            lugar como este. La Presa El Peralillo es uno de los puntos turísticos favoritos para acampar, si no quieres llevar tu tienda de campaña puedes rentar una cómoda
-                            cabaña por el precio de $1,300.00 pesos mexicanos aprox.
-                            <br><br>
-                        
-                            Como tal, la Sierra de Santa Rosa al ser un área natural protegida no tiene un horario ni un precio para acceder, aunque te recomendamos encarecidamente NO visitar 
-                            la Sierra de noche a menos que tengas algo de experiencia acampando y estés acompañado, toma tus precauciones y por favor, te pedimos que respetes la flora y fauna
-                            de la zona. Mantén limpios los bosques, recuerda lo hermoso que es Guanajuato, hagámos que su belleza perdure por muchos años más (siglos si se puede).
-                        </figcaption>
+        <a ></a>
+        <div id="sierra-santa-rosa" class="container text-center py-5 dark-theme" data-aos="fade-up">
+            <h1 class="fs-1 pt-5 pb-3">Sierra de Santa Rosa</h1>
+            <div class="row pb-2">
+                <div class="col-xl-4">
+                    <img src="./img/lugar-sierra-santa-rosa-low.jpg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
+                    <div class="d-flex flex-column mb-3 justify-content-start">
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-geo-alt-fill fs-5"> Guanajuato, Gto. 36220 </i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-clock fs-5"> Abierto todos los días</i></div>
+                        <div class="p-1"><i id="i-dark-theme" class="bi bi-currency-dollar fs-5"> Sin Costo </i></div>
                     </div>
                 </div>
+                <div class="col-xl-8">
+                    <figcaption class="figure-caption fs-5 text-start mx-4 dark-theme">
+                        Afortunados aquellos que anhelan visitar Guanajuato pero aman estar alejados de la sociedad y la tecnología porque pueden visitar 
+                        la <b> Sierra de Santa Rosa</b> que abarca más de 113 mil hectáreas de pura sierra. Así mismo, si quieres tener la orientación de algún guía experimentado
+                        puedes asistir al Parque Ecológico Xúmu, famoso por sus enormes árboles de encino y por su niebla matutina.
+                        <br><br>
+
+                        La Cuenca de la Esperanza es otra área natural aledaña de más de 1,800 hectáreas de bosque. Si quieres divisar áves, creenos que no encontrarás un mejor
+                        lugar como este. La Presa El Peralillo es uno de los puntos turísticos favoritos para acampar, si no quieres llevar tu tienda de campaña puedes rentar una cómoda
+                        cabaña por el precio de $1,300.00 pesos mexicanos aprox.
+                        <br><br>
+                    
+                        Como tal, la Sierra de Santa Rosa al ser un área natural protegida no tiene un horario ni un precio para acceder, aunque te recomendamos encarecidamente NO visitar 
+                        la Sierra de noche a menos que tengas algo de experiencia acampando y estés acompañado, toma tus precauciones y por favor, te pedimos que respetes la flora y fauna
+                        de la zona. Mantén limpios los bosques, recuerda lo hermoso que es Guanajuato, hagámos que su belleza perdure por muchos años más (siglos si se puede).
+                    </figcaption>
+                </div>
             </div>
-        </section>
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <!--Animate On Scroll-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
@@ -497,11 +594,11 @@
                 {
                     duration: 1000,
                     once: true
+                    //startEvent: 'DOMContentLoaded'
                 }
             );
         </script>
         <!-- Initialize Swiper -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script>
             const progressCircle = document.querySelector(".autoplay-progress svg");
             const progressContent = document.querySelector(".autoplay-progress span");
