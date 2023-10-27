@@ -99,7 +99,7 @@ body {
 }
 
 .img-carrusel {
-    max-height: 30rem;
+    max-height: 25rem;
 }
 
 
@@ -165,4 +165,33 @@ body {
 .bi-geo-alt-fill, .bi-clock, .bi-currency-dollar {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url('../img/flecha-izq.png');
+}
+
+.carousel-control-next-icon {
+    background-image: url('../img/flecha-der.png');
+}
+
+
+
+#enlace {
+    text-decoration: none;
+    color: #FFF7E7;
+    transition: color 0.4s;
+}
+
+#enlace:hover {
+    color: #D69212;
+}
+
+#leyenda {
+    font-style: italic;
+}
+
+#frase {
+    font-weight: bold;
 }
