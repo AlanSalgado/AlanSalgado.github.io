@@ -2,7 +2,7 @@
   "name": "rumapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AlanSalgado.github.io/AlanSalgado.github.io/build",
+  "homepage": "https://AlanSalgado.github.io/AlanSalgado.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
