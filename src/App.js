@@ -1,22 +1,16 @@
-import logo from './logo.svg';
+import logo from './media/logo.png';
+import maintenance from './media/maintenance-crop.gif'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          PURO PINCHE <code>RUMAPP</code> ALV 🤑👌
+        <img src={logo} className='App-logo'></img>
+        <img src={maintenance} className="App-bus" alt="logo" />
+        <p className='App-desc'>
+          Estamos en mantenimiento... Se paciente por favor 😁
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
