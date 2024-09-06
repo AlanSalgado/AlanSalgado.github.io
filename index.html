@@ -1,312 +1,977 @@
-<!--VERSIÓN 1.1-->
+<!--VERSIÓN 2.1-->
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.8">
-        <meta name="description" content="Bienvenido a la página oficial de Rumapp, recuerda que siempre buscaremos llevarte en la dirección correcta.">
-        <meta name="keywords" content="stream, routes, stream_routes, Rumapp, rutas, guanajuato">
-        <meta name="language" content="spanish">
-        <meta name="copyright" content="Rumapp">
-        <meta name="author" content="Rumapp">
-        <meta name="audience" content="all">
-        <title>Rumapp</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="shortcut icon" href="./img/logo-navbar-2.png" alt="Rumapp">
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    </head>
 
-    
-    <body>
-        <!--MENU SUPERIOR-->
-        <nav id="menu" class="navbar navbar-expand-lg p-3 dark-theme sticky-top navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <!--  <span>Stream Routes Rifa</span>   --> 
-                    <img src="./img/logo-navbar-2.png" alt="" title="Volver a la página de inicio" width="45">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="description" content="Bienvenido a la página oficial de Rumapp, recuerda que siempre buscaremos llevarte en la dirección correcta.">
+    <meta name="keywords" content="stream, routes, stream_routes, Rumapp, rutas, guanajuato">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="Rumapp">
+    <meta name="author" content="Rumapp">
+    <meta name="audience" content="all">
+    <title>Rumapp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./media-tinified/logo-navbar-2.png" alt="Rumapp">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</head>
+
+
+<body>
+    <!--MENU SUPERIOR-->
+    <!-- <nav id="menu" class="navbar navbar-expand-lg p-3 dark-theme sticky-top navbar-dark d-none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./media-tinified/logo-navbar-2.png" alt="" title="Volver a la página de inicio" width="45">
+            </a>
+            <div class="ml-auto flex gap-4 sm:gap-6">
+                <a class="text-sm font-medium hover:underline underline-offset-4 text-[#FFF7E7]" href="./tourism.html">
+                    Turismo
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                <a class="text-sm font-medium hover:underline underline-offset-4 text-[#FFF7E7]"
+                    href="./contact-us.html">
+                    Contáctanos
+                </a>
+                <a class="text-sm font-medium hover:underline underline-offset-4 text-[#FFF7E7]"
+                    href="./mission-vision.html">
+                    Misión, Visión y Valores
+                </a>
+                <a class="text-sm font-medium hover:underline underline-offset-4 text-[#FFF7E7]" href="./faq.html">
+                    Preguntas Frecuentes
+                </a>
+                <a class="text-sm font-medium hover:underline underline-offset-4 text-[#FFF7E7]"
+                    href="./privacy-notice.html">
+                    Aviso de Privacidad
+                </a>
+            </div>
+        </div>
+    </nav> -->
+
+    <style>
+        nav a {
+            font-size: 20px;
+            /* Aumenta el tamaño del texto */
+            transition: color 0.3s ease;
+        }
+    </style>
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 bg-[#192833]">
+        <div class="flex flex-wrap items-center justify-between mx-auto p-4 bg-[#192833] text-[#FFF7E7]">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./media-tinified/logo-navbar-2.png" alt="" title="Volver a la página de inicio" width="45">
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto mt-1" id="navbar-default">
+                <ul
+                    class="sm:mt-3 bg-[#192833] font-medium flex flex-col md:p-0 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="./tourism.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#DEA53A] md:p-0 dark:text-white md:dark:hover:text-[#DEA53A] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Turismo</a>
+                    </li>
+                    <li>
+                        <a href="./contact-us.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#DEA53A] md:p-0 dark:text-white md:dark:hover:text-[#DEA53A] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contáctanos</a>
+                    </li>
+                    <li>
+                        <a href="./mission-vision.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#DEA53A] md:p-0 dark:text-white md:dark:hover:text-[#DEA53A] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Misión,
+                            Visión y Valores</a>
+                    </li>
+                    <li>
+                        <a href="./faq.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#DEA53A] md:p-0 dark:text-white md:dark:hover:text-[#DEA53A] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Preguntas
+                            Frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="./privacy-notice.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#DEA53A] md:p-0 dark:text-white md:dark:hover:text-[#DEA53A] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Aviso
+                            de Privacidad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- PORTADA -->
+    <section id="cover" class="w-full py-12 md:py-24 lg:py-32 bg-[#FFF7E7]">
+        <div class="container px-4 md:px-6">
+            <div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+                <div class="flex flex-col justify-center space-y-4" data-aos="fade-up">
+                    <div class="space-y-2">
+                        <h1 id="encabezado"
+                            class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-[#192833]">
+                            Rumapp: donde la magia se encuentra en cada ruta ✨
+                        </h1>
+                        <p class="max-w-[600px] text-muted-foreground md:text-xl text-[#192833]">
+                            ¡Conoce a Rumapp! La aplicación móvil freemium multifuncional que será tu guía para moverte
+                            dentro de la ciudad,
+                            tomar el camión más fácil y encontrar estacionamiento rápido.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                        <a class="inline-flex h-10 items-center justify-center rounded-md bg-[#DEA53A] px-8 text-sm font-medium text-[#FFF7E7] shadow transition-colors hover:bg-[#DEA53A]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                            href="#">
+                            Descarga la app
+                        </a>
+                    </div>
+                </div>
+                <img src="./media-tinified/gto-cover-2.jpg" width="550" height="550" alt=""
+                    class="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-square"
+                    data-aos="fade-up" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNCIONES CLAVE -->
+    <section id="features" class="w-full py-12 md:py-24 lg:py-32 bg-[#192833] text-[#FFF7E7]">
+        <div class="container px-4 md:px-6">
+            <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                <div class="space-y-2">
+                    <div class="inline-block rounded-lg bg-[#DEA53A] px-3 py-1 text-sm">Funcionalidades</div>
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Viaja con Facilidad</h2>
+                    <p
+                        class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        Nuestra app provee transporte público en tiempo real y soluciones inteligentes para encontrar
+                        estacionamiento
+                        de manera rápida y sencilla con confiana y seguridad.
+                    </p>
+                </div>
+            </div>
+            <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12" data-aos="fade-up">
+                <img src="./media-tinified/features-1.jpg" width="550" height="310" alt=""
+                    class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last" />
+                <div class="flex flex-col justify-center space-y-4">
+                    <div class="space-y-2">
+                        <h3 class="text-2xl font-bold">Transporte Público en Tiempo Real</h3>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Tiempo real del transporte público
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact-us.html">Contáctanos</a>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Trazado y descarga de rutas de transporte público
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./tourism.html">Turismo</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Más
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./privacy-notice.html">Aviso de privacidad</a></li>
-                                <li><a class="dropdown-item" href="./mission-vision.html">Misión y visión</a></li>
-                                <li><a class="dropdown-item" href="./values.html">Valores y creencias</a></li>
-                                <li><a class="dropdown-item" href="./faq.html">Preguntas Frecuentes</a></li>
-                            </ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Situación del tránsito de la zona y tiempos aproximados de espera y llegada
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+            <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12" data-aos="fade-up">
+                <img src="./media-tinified/features-2.jpg" width="550" height="310" alt=""
+                    class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full" />
+                <div class="flex flex-col justify-center space-y-4">
+                    <div class="space-y-2">
+                        <h3 class="text-2xl font-bold">Ubicación y disponibilidad de estacionamientos</h3>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Ubicación de los estacionamientos
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Disponibilidad y cupo en tiempo real
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Reservación de lugar hasta por 10 hrs.
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Llega al estacionamiento, escanea el QR y listo
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12" data-aos="fade-up">
+                <img src="./media-tinified/features-3.jpg" width="550" height="310" alt=""
+                    class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last" />
+                <div class="flex flex-col justify-center space-y-4">
+                    <div class="space-y-2">
+                        <h3 class="text-2xl font-bold">Turismo Sostenible</h3>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Mapas y marcadores del patrimonio, cultura y arte de la ciudad.
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Espacios publicitarios de negocios locales dentro de la app
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Horarios, Ubicación y precios de puntos turísticos
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12" data-aos="fade-up">
+                <img src="./media-tinified/features-5.jpg" width="550" height="310" alt=""
+                    class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full" />
+                <div class="flex flex-col justify-center space-y-4">
+                    <div class="space-y-2">
+                        <h3 class="text-2xl font-bold">Y Más...</h3>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Planifica tu viaje
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Descarga de rutas
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Chat general para comunicarte con más usuarios
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Comparte tu ubicación con más usuarios
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        
-        <img src="./img/portada-inicio.webp" class="d-block w-100 mb-3 pb-4" alt="historia" data-aos="fade-right" id="imgPortada">
-
-        <!--QUE ES RUMAPP-->
-        <section data-aos="fade-up" class="row w-100 mx-auto text-center py-5 light-theme">
-            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
-                <img src="./img/pantalla-menu-principal.webp" class="figure-img img-fluid" alt="..." width="300">
-                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
-                    <h1 class="p-1 fs-1">¿Qué es Rumapp?</h1>
-                    <b>Rumapp</b> es una aplicación móvil freemium para Android que muestra en tiempo real
-                    el transporte público, situación de transito, trazado y descarga de rutas si estás offline, así 
-                    como compartir tu ubicación, dentro de la ciudad de Guanajuato capital. Además de mostrar la ubicación
-                    de los estacionamientos, su disponibilidad actual y el tiempo aproximado de espera para que no sufras
-                    a la hora de estacionarte.
-                    <br><br>
-                    
-                    Contamos con servicio freemium que divide al usuario en dos niveles: gratuito y premium. Los usuarios gratuitos
-                    tienen acceso limitado en las funciones y anuncios dentro de la app, mientras que los usuarios premium obtienen 
-                    acceso total a la aplicación libre de anuncios. Contamos también con paquetes especiales para los turistas y los 
-                    estudiantes así como un paquete anual.
-                </figcaption>
-            </figure>
-        </section>
-
-        <!--AGUAS CUIDAO-->
-        <section data-aos="fade-up" class="row w-100 mx-auto text-center py-5 dark-theme">
-            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
-                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start dark-theme">
-                    <h1 class="p-1 fs-1">¡Que ya no se te pase el camión!</h1>
-                    Sabemos muy bien que si viajas a Guanajuato capital en tu automóvil, lo más seguro es que lo único que vas a conocer 
-                    es el carro de enfrente y muchos semáforos, es por ello que tomar el transporte público luce como una opción bastante viable,
-                    rentable y agradable. Rumapp es tu guía interactiva para que puedas saber qué rutas del transporte público debes tomar, 
-                    a qué hora y en qué punto de la ciudad, ¡Viajar nunca resultó tan fácil!
-                    <br><br>
-
-                    Nuesta misión es exponer en tiempo real el movimiento del transporte público de Guanajuato capital a través de nuestra aplicación móvil para 
-                    convertirnos en la referencia entre aplicaciones del mismo campo; congruentes con las necesidades del usuario.
-
-                    Recuerda que <b>Rumapp siempre buscará llevarte en la dirección correcta</b>
-                </figcaption>
-                <img src="./img/pantalla-rutas.webp" class="figure-img img-fluid" alt="..." width="300">
-            </figure>
-        </section>
-
-        <!--FUNCIONES DE LA APP-->
-        <section data-aos="fade-up" class="row w-100 mx-auto text-center py-5 light-theme">
-            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
-                <img src="./img/pantalla-menu-transporte.webp" class="figure-img img-fluid" alt="..." width="300">
-                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
-                    <h1 class="p-1 fs-1">Funciones Únicas</h1>
-                    Rumapp no es una simple guía, con nuestro servicio puedes <b>Planificar Tu Viaje</b> con anticipación para que no desperdicies
-                    tiempo y puedas aprovechar cada minuto en tan hermosa ciudad mítica. Si no sabes que visitar, tranquilo, consulta la sección de <b>Turismo</b> de nuestra app y elige algún punto de interés para comenzar tu travesia.
-                    <br><br>
-
-                    La app cuenta con un <b>Chat General</b> por si en algún momento necesitas ayuda tanto del equipo de soporte de Rumapp como de más personas
-                    que también utilizan nuestra app.
-                    <br>La seguridad del turista es muy importante para nosotros, es por ello que si te encuentras viajando y deseas que algún amigo, familiar o conocido
-                    sepa en dónde te ubicas entonces puedes hacer uso de <b>Compartir Ubicación</b> para asegurar tu bienestar. 
-                    <br>En caso de que no dispongas de conexión a internet, de que tu compañía telefónico te haya quedado mal o simplemente te metiste a un tunel 
-                    (situación muy normal en Guanajuato) puedes <b>Descargar las Rutas</b> de transporte público para que puedas viajar offline.
-                    <br><br>
-
-                    Así mismo, contamos con una sección donde puedes <b>Valorar nuestro servicio</b>, la opinión de los usuarios nos importa muchísimo. Damos soporte
-                    a idioma español e inglés, dispones de una sección dedicada a <b>Ayuda y Soporte</b> y puedes configurar la aplicación a tu gusto en la sección de
-                    <b>Configuración</b> incluso para que puedas alternar entre nuestro tema claro y oscuro.
-                    
-                </figcaption>
-            </figure>
-        </section>
-
-        <!--TURISMO-->
-        <section data-aos="fade-up" class="row w-100 mx-auto text-center py-5 dark-theme">
-            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
-                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start dark-theme">
-                    <h1 class="p-1 fs-1">Descubre Guanajuato</h1>
-                    Guanajuato es una ciudad emblemática muy característica por sus múltiples puntos turísticos, si no sabes que puntos
-                    visitar puedes consultarlo desde la aplicación. 
-                    <br><br>
-
-                    Tenemos desde puntos muy concurridos como el famoso Callejón del Beso hasta puntos remotos de la civilización 
-                    donde puedes acampar como la Sierra de Santa Rosa. Toda esta información y más también la puedes consultar directamente
-                    en este sitio web en la pestaña de <b><a id="enlace" href="http://streamroutes.com/tourism.html">Turismo</a></b>.
-
-                    Por el momento nos enfocamos unicamente en Guanajuato capital, esperamos con ansias poder abarcar tu ciudad para apoyar el comercio local,
-                    promover el turismo y brindar una experiencia de viaje única a los usuarios.
-                </figcaption>
-                <img src="./img/pantalla-turismo.webp" class="figure-img img-fluid" alt="..." width="300">
-            </figure>
-        </section>
-
-        <!--PANTALLA PRINCIPAL ESTACIONAMIENTO-->
-        <section data-aos="fade-up" class="row w-100 mx-auto text-center py-5 light-theme">
-            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
-                <img src="./img/pantalla-parking.webp" class="figure-img img-fluid" alt="..." width="300">
-                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start light-theme">
-                    <h1 class="p-1 fs-1">¡Encuentra el estacionamiento indicado!</h1>
-                    Encontrar estacionamiento nunca había sido tan fácil con Rumapp. ¡Ya no te detengas a preguntar donde estacionarte!
-                    mejor descarga Rumapp y busca los estacionamientos más cercanos o que mejor se ajusten a tu presupuesto. Consulta
-                    el horario laboral y si no hay lugar ¡No te preocupes! contamos con la función de tiempo aproximado de espera para 
-                    que esperes a que se desocupe un lugar. 
-                </figcaption>
-            </figure>
-        </section>
-
-        <!--MENU PRINCIPAL PARKING-->
-        <section data-aos="fade-up" class="row w-100 mx-auto text-center py-5 dark-theme">
-            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
-                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start dark-theme">
-                    <h1 class="p-1 fs-1">Uso fácil</h1>
-                    La aplicación está enfocada prinicipalmente al sistema operativo <b>Android</b>, por el momento no 
-                    brindamos soporte a usuarios iOS ¡Pero no te preocupes si eres usuario iOS! pronto haremos todo lo posible
-                    para que te unas a la familia Rumapp.
-                    <br><br>
-
-                    Estamos en la fase de prototipado, por lo tanto, no encontrarás todavía Rumapp en Google Play Store.
-                    Te pedimos encarecidamente esperar una versión funcional para que ya no necesites correr una cuadra completa para 
-                    alcanzar el camión.
-                    <br><br>
-
-                    Como <b>requisitos mínimos</b> debes considerar disponer de una versión de Android 7.0 o superior, así como 100 MB de espacio
-                    de almacenamiento y 1 GB de RAM.
-                </figcaption>
-                <img src="./img/pantalla-ruta-parking.webp" class="figure-img img-fluid" alt="..." width="300">
-            </figure>
-        </section>
-
-        <!--RUTA PARKING-->
-        <section data-aos="fade-up" class="row w-100 mx-auto text-center py-5 light-theme">
-            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
-                <img src="./img/androide.png" class="figure-img img-fluid" alt="..." width="300">
-                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
-                    <h1 class="p-1 fs-1">Requisitos Mínimos</h1>
-                    La aplicación está enfocada prinicipalmente al sistema operativo <b>Android</b>, por el momento no 
-                    brindamos soporte a usuarios iOS ¡Pero no te preocupes si eres usuario iOS! pronto haremos todo lo posible
-                    para que te unas a la familia Rumapp.
-                    <br><br>
-
-                    Estamos en la fase de prototipado, por lo tanto, no encontrarás todavía Rumapp en Google Play Store.
-                    Te pedimos encarecidamente esperar una versión funcional para que ya no necesites correr una cuadra completa para 
-                    alcanzar el camión.
-                    <br><br>
-
-                    Como <b>requisitos mínimos</b> debes considerar disponer de una versión de <b>Android 7.0 o superior</b>, así como <b>50 MB de espacio
-                    de almacenamiento</b>, <b>1 GB de RAM</b>, <b>procesador mínimo 1 GHz</b>, <b>acceso a la ubicación actual</b> y <b>Wi-Fi</b> o <b>datos móviles</b>.
-                </figcaption>
-            </figure>
-        </section>
-
-        <section class="w-100 dark-theme align-items-center py-3">
-            <h1 class="p-3 fs-1 text-center">¡Nuestro Equipo!</h1>
-            <div class="row w-75 mx-auto" id="servicios-fila-1">       
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap" data-aos="fade-up">
-                    <img class="img-thumbnail rounded-4" src="./img/avatar-fem.png" alt="desarrollo" width="200" height="200">
-                    <div>
-                        <h3 class="fs-5 mt-4 px-4 pb-1">Nayeli Cano</h3>
-                        <p class="px-4">CEO</p>
+    <section id="requeriments" class="w-full py-12 md:py-24 lg:py-32 bg-[#FFF7E7]">
+        <div class="container px-4 md:px-6">
+            <div class="mx-auto max-w-3xl space-y-6">
+                <div class="space-y-2">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Requerimientos Mínimos</h2>
+                    <p class="text-muted-foreground md:text-xl">
+                        Para garantizar una mejor experiencia de usuario con nuestra aplicación, asegúrate que tu
+                        dispositivo móvil
+                        cumpla con los siguientes requerimientos mínimos.
+                    </p>
+                </div>
+                <div class="grid gap-6 rounded-lg border bg-white p-6 shadow-sm" data-aos="fade-up">
+                    <div class="flex">
+                        <div class="w-1/2">
+                            <!-- Aquí va tu contenido de los requerimientos -->
+                            <div class="mb-2">
+                                <h3 class="text-lg font-semibold">Sistema Operativo</h3>
+                                <ul class="space-y-1 text-muted-foreground">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="font-medium">Android 7.0 o superior</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-2">
+                                <h3 class="text-lg font-semibold">Almacenamiento</h3>
+                                <ul class="space-y-1 text-muted-foreground">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="font-medium">50 MB</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-2">
+                                <h3 class="text-lg font-semibold">RAM</h3>
+                                <ul class="space-y-1 text-muted-foreground">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="font-medium">1 GB</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-2">
+                                <h3 class="text-lg font-semibold">Procesador</h3>
+                                <ul class="space-y-1 text-muted-foreground">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="font-medium">1.0 GHz</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-2">
+                                <h3 class="text-lg font-semibold">Conectividad</h3>
+                                <ul class="space-y-1 text-muted-foreground">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="font-medium">Conexión a internet o datos móviles</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span class="font-medium">Acceso a la ubicación actual</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="w-1/2 flex items-center justify-center">
+                            <img src="./media-tinified/android.png" alt="" class="max-w-full h-auto" width="250"
+                                data-aos="fade-up">
+                        </div>
                     </div>
                 </div>
-        
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap" data-aos="fade-up">
-                    <img class="img-thumbnail rounded-4" src="./img/avatar-mas.png" alt="concepto" width="200" height="200">
-                    <div>
-                        <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Cristian Alexis</h3>
-                        <p class="px-4">Vicepresidente</p>
-                    </div>
-                </div>   
             </div>
-            
-            <div class="row w-75 mx-auto" id="servicios-fila-2">       
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap" data-aos="fade-up">
-                    <img class="img-thumbnail rounded-4" src="./img/avatar-mas.png" alt="comunicaciones" width="200" height="200 ">
-                    <div>
-                        <h3 class="fs-5 mt-4 px-4 pb-1">Alan Salgado</h3>
-                        <p class="px-4">Gerente de Sistemas</p>
+        </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="pricing" class="w-full py-12 md:py-24 lg:py-32 bg-[#192833] text-[#FFF7E7]">
+        <div class="container grid gap-8 px-4 md:px-6">
+            <div class="flex flex-col items-center justify-center text-center">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">¡Precios para todo mundo!</h2>
+                <p class="max-w-md md:text-lg">
+                    Encuentra el plan perfecto para moverte a través de la ciudad con nuestras herramientas de
+                    transporte público y estacionamientos.
+                </p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+                <div class="flex flex-col items-center justify-between rounded-lg border bg-background p-6 text-center shadow-sm"
+                    data-aos="fade-up">
+                    <div class="grid gap-2">
+                        <h3 class="text-2xl font-bold">Básico</h3>
+                        <p>Inicia con nuestro plan gratuito.</p>
+                    </div>
+                    <div class="my-4">
+                        <span class="text-4xl font-bold text-[#DEA53A]">Gratis</span>
+                    </div>
+                    <ul class="grid gap-2 text-left">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Uso Gratuito
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Con Anuncios
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Trazado de Rutas de Transporte
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Descarga de Rutas
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Acceso a Turismo
+                        </li>
+                    </ul>
+
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 mt-4 text-[#192833] bg-[#DEA53A] hover:bg-[#DEA53A]/90">
+                        Inicia Ya
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-between rounded-lg border bg-background p-6 text-center shadow-sm"
+                    data-aos="fade-up">
+                    <div class="grid gap-2">
+                        <h3 class="text-2xl font-bold">Premium</h3>
+                        <p>Uso ilimitado a funciones únicas.</p>
+                    </div>
+                    <div class="my-4">
+                        <span class="text-4xl font-bold text-[#DEA53A]">$20</span>
+                        <span class="text-sm">/ mes</span>
+                    </div>
+                    <ul class="grid gap-2 text-left">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Sin Anuncios
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Seguimiento en Tiempo Real
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Estacionamientos Disponibles
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
+                            Acceso a Ilimitado a Funciones Premium
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Pago por Suscripción o Pago Único
+                        </li>
+                    </ul>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 mt-4 text-[#192833] bg-[#DEA53A] hover:bg-[#DEA53A]/90">
+                        Obtener Premium
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-between rounded-lg border bg-background p-6 text-center shadow-sm"
+                    data-aos="fade-up">
+                    <div class="grid gap-2">
+                        <h3 class="text-2xl font-bold">Estudiantil</h3>
+                        <p>Plan especial para estudiantes.</p>
+                    </div>
+                    <div class="my-4">
+                        <span class="text-4xl font-bold text-[#DEA53A]">$15</span>
+                        <span class="text-sm">/ mes</span>
+                    </div>
+                    <ul class="grid gap-2 text-left">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Sin Anuncios
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
+                            Acceso a Ilimitado a Funciones Premium
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Descuento para Estudiantes
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Pago por Suscripción o Pago Único
+                        </li>
+                    </ul>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 mt-4 text-[#192833] bg-[#DEA53A] hover:bg-[#DEA53A]/90">
+                        Obtener Estudiantil
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-between rounded-lg border bg-background p-6 text-center shadow-sm"
+                    data-aos="fade-up">
+                    <div class="grid gap-2">
+                        <h3 class="text-2xl font-bold">Turista</h3>
+                        <p>Explora la ciudad con el plan de Turista.</p>
+                    </div>
+                    <div class="my-4">
+                        <span class="text-4xl font-bold text-[#DEA53A]">$15</span>
+                        <span class="text-sm">/ 15 días</span>
+                    </div>
+                    <ul class="grid gap-2 text-left">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Sin Anuncios
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
+                            Acceso a Ilimitado a Funciones Premium
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Plan Ajustado a Turistas
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Pago por Suscripción o Pago Único
+                        </li>
+                    </ul>
+                    <div class="grid gap-2 mt-4">
+                    </div>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 mt-4 text-[#192833] bg-[#DEA53A] hover:bg-[#DEA53A]/90">
+                        Obtener Turista
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-between rounded-lg border bg-background p-6 text-center shadow-sm"
+                    data-aos="fade-up">
+                    <div class="grid gap-2">
+                        <h3 class="text-2xl font-bold">Anual</h3>
+                        <p>Ahorra con la suscripción anual.</p>
+                    </div>
+                    <div class="my-4">
+                        <span class="text-4xl font-bold text-[#DEA53A]">$180</span>
+                        <span class="text-sm">/ año</span>
+                    </div>
+                    <ul class="grid gap-2 text-left">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Sin Anuncios
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
+                            Acceso a Ilimitado a Funciones Premium
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Ahorro del 25%
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 inline-block h-4 w-4 text-[#DEA53A]">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                            Pago por Suscripción o Pago Único
+                        </li>
+                    </ul>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 mt-4 text-[#192833] bg-[#DEA53A] hover:bg-[#DEA53A]/90">
+                        Obtener Anual
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="w-full py-12 md:py-24 lg:py-32 bg-[#FFF7E7] text-[#192833]">
+        <!-- w-full  mx-auto py-1 md:py-24 lg:py-32 -->
+        <div class="container grid gap-8 px-4 md:px-6 max-w-4xl">
+            <div class="grid gap-10">
+                <div class="space-y-3">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Cómo empezó Rumapp?...</h2>
+                    <p
+                        class="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        Descubre como comenzó la historia de Rumapp, explore los hitos clave que han dado forma a
+                        nuestra empresa a
+                        lo largo de los años.
+                    </p>
+                </div>
+                <div class="relative pl-6 after:absolute after:inset-y-0 after:left-0 after:w-px after:bg-[#192833]/20">
+                    <div class="grid gap-10">
+                        <div class="grid grid-cols-[auto_1fr] gap-4 text-sm relative" data-aos="fade-right">
+                            <div
+                                class="aspect-square w-3 bg-[#DEA53A] rounded-full absolute left-0 translate-x-[-29.5px] z-10 top-1">
+                            </div>
+                            <img src="./media-tinified/timeline-1.jpeg" alt="" width="200" height="200"
+                                class="rounded-md" style="aspect-ratio:200/200;object-fit:cover" />
+                            <div>
+                                <div class="font-medium font-bold text-2xl">2019 - Primeros Pasos</div>
+                                <div class="text-[#192833]">
+                                    En el año 2019, se desarolla la versión inicial llamada en aquel entonces "Stream
+                                    Rutas", siendo sus
+                                    fundadores estudiantes del CBTis 217 y siendo partícipes del concurso "Emprendedores
+                                    2020". La aplicación
+                                    llegó a instancias nacionales, sin embargo, fue necesario detener el concurso debido
+                                    a la pandemia.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] gap-4 text-sm relative" data-aos="fade-right">
+                            <div
+                                class="aspect-square w-3 bg-[#DEA53A] rounded-full absolute left-0 translate-x-[-29.5px] z-10 top-1">
+                            </div>
+                            <img src="./media-tinified/timeline-3.jpeg" alt="" width="200" height="200"
+                                class="rounded-md" style="aspect-ratio:200/200;object-fit:cover" />
+                            <div>
+                                <div class="font-medium font-bold text-2xl">2023 - Regreso como Stream Routes</div>
+                                <div class="text-[#192833]">
+                                    A inicios del año 2023, el proyecto es retomado y resurge de las cenizas gracias a
+                                    un equipo
+                                    renovado de jóvenes universitarios pertenecientes al TecNM Campus Sur de Guanajuato,
+                                    ahora
+                                    con el nombre de "Stream Routes".
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] gap-4 text-sm relative" data-aos="fade-right">
+                            <div
+                                class="aspect-square w-3 bg-[#DEA53A] rounded-full absolute left-0 translate-x-[-29.5px] z-10 top-1">
+                            </div>
+                            <img src="./media-tinified/timeline-4.jpg" alt="" width="200" height="200"
+                                class="rounded-md" style="aspect-ratio:200/200;object-fit:cover" />
+                            <div>
+                                <div class="font-medium font-bold text-2xl">2023 - InnovaTecNM</div>
+                                <div class="text-[#192833]">
+                                    Stream Routes debuta en la etapa local del concurso InnovaTecNM edición 2024,
+                                    ganando 2do lugar y
+                                    asegurando un pase a instancias regionales en el TecNM Campus San Luis Potosí.
+                                    <br><br>
+                                    El equipo logra consolidarse como el mejor prototipo de la categoría y obtiene el
+                                    1er lugar, por lo que
+                                    acreeditan a la etapa nacional a celebrarse en el TecNM Campus Puebla. <br><br>
+                                    El año culmina con una entusiasta participación en la instancia nacional.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] gap-4 text-sm relative" data-aos="fade-right">
+                            <div
+                                class="aspect-square w-3 bg-[#DEA53A] rounded-full absolute left-0 translate-x-[-29.5px] z-10 top-1">
+                            </div>
+                            <img src="./media-tinified/timeline-5.jpg" alt="" width="200" height="200"
+                                class="rounded-md" style="aspect-ratio:200/200;object-fit:cover" />
+                            <div>
+                                <div class="font-medium font-bold text-2xl">2024 - Presente y Futuro</div>
+                                <div class="text-[#192833]">
+                                    Ahora, bajo el nombre de Rumapp, el equipo sigue trabajando de manera entusiasta
+                                    para que tomar el
+                                    bus o encontrar un estacionamiento sean una experiencia única y no un reto (Así
+                                    es... ya no se te
+                                    pasará el autobús y podrás encontrar estacionamiento rápido, ¿qué estás esperando?
+                                    ¡Descarga Rumapp!).
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap" data-aos="fade-up">
-                    <img class="img-thumbnail rounded-4" src="./img/avatar-mas.png" alt="comunicaciones" width="200" height="200 ">
-                    <div>
-                        <h3 class="fs-5 mt-4 px-4 pb-1">Gabriel Quintino</h3>
-                        <p class="px-4">Desarrollador</p>
+                <div class="space-y-3">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Conoce al equipo</h2>
+                    <p
+                        class="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        Los encargados de darle vida a Rumapp, tu guía y acompañante para viajar.
+                    </p>
+                </div>
+                <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+                    <div class="rounded-lg border bg-white text-card-foreground shadow-sm p-6 grid gap-4"
+                        data-v0-t="card" data-aos="flip-up">
+                        <div class="flex items-center gap-4">
+                            <span class="relative flex shrink-0 overflow-hidden rounded-full h-16 w-16">
+                                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">
+                                    <img src="./media-tinified/nay.jpeg" alt="">
+                                </span>
+                            </span>
+                            <div>
+                                <h3 class="text-lg font-semibold">Nayeli Cano</h3>
+                                <p class="text-[#192833]">CEO</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#192833]">
+                                Estudiante de Ingeniería Industrial, una completa visionaria, cofundadora y CEO de
+                                Rumapp, es la líder de Rumapp, compañía
+                                que busca posicionarse como la referencia en aplicaciones de promoción y movilidad. Su
+                                creatividad, originalidad
+                                e ingenio han sido claves para la existencia de Rumapp.
+                            </p>
+                        </div>
                     </div>
-                </div>  
-            </div>
-
-            <div class="row w-75 mx-auto mb-2" id="servicios-fila-3">       
-                <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap" data-aos="fade-up">
-                    <img class="img-thumbnail rounded-4" src="./img/avatar-fem.png" alt="comunicaciones" width="200" height="200 ">
-                    <div>
-                        <h3 class="fs-5 mt-4 px-4 pb-1">Azeneth Rosiles</h3>
-                        <p class="px-4">Contadora</p>
+                    <div class="rounded-lg border bg-white text-card-foreground shadow-sm p-6 grid gap-4"
+                        data-v0-t="card" data-aos="flip-up">
+                        <div class="flex items-center gap-4">
+                            <span class="relative flex shrink-0 overflow-hidden rounded-full h-16 w-16">
+                                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">
+                                    <img src="./media-tinified/cris.jpeg" alt="">
+                                </span>
+                            </span>
+                            <div>
+                                <h3 class="text-lg font-semibold">Alexis Torres</h3>
+                                <p class="text-[#192833]">Vicepresidente</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#192833]">
+                                Estudiante de Ingeniería en Sistemas Computacionales, desarrollador móvil Android, es
+                                cofundador y
+                                vicepresidente. Con conocimientos técnicos avanzados y una pasión por la inovación, es
+                                el timón y el
+                                encargado de liderar al equipo de desarrrollo; Es considerado como el pilar de nuestra
+                                compañía.
+                            </p>
+                        </div>
                     </div>
-                </div> 
+                    <div class="rounded-lg border bg-white text-card-foreground shadow-sm p-6 grid gap-4"
+                        data-v0-t="card" data-aos="flip-up">
+                        <div class="flex items-center gap-4">
+                            <span class="relative flex shrink-0 overflow-hidden rounded-full h-16 w-16">
+                                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">
+                                    <img src="./media-tinified/alan.jpeg" alt="">
+                                </span>
+                            </span>
+                            <div>
+                                <h3 class="text-lg font-semibold">Alan Salas</h3>
+                                <p class="text-[#192833]">Desarrollador</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#192833]">
+                                Estudiante de Ingeniería en Sistemas Computacionales, desarrollador web back-end. Forma
+                                parte del equipo de programadores y es el encargado de la parte de back-end de nuestros
+                                servicios.
+                                Su adaptabilidad, escucha activa y atención al detalle han sido claves para que el
+                                equipo de Rumapp
+                                siga cosechando éxitos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-white text-card-foreground shadow-sm p-6 grid gap-4"
+                        data-v0-t="card" data-aos="flip-up">
+                        <div class="flex items-center gap-4">
+                            <span class="relative flex shrink-0 overflow-hidden rounded-full h-16 w-16">
+                                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">
+                                    <img src="./media-tinified/quinti.jpeg" alt="">
+                                </span>
+                            </span>
+                            <div>
+                                <h3 class="text-lg font-semibold">Luis G. Quintino</h3>
+                                <p class="text-[#192833]">Desarrollador</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#192833]">
+                                Estudiante de Ingeniería en Sistemas Computacionales. Desarrollador fullstack con
+                                especialidad en
+                                tecnologías web, Luis Gabriel es parte fundamental del equipo de desarrollo. Su ingenio,
+                                constancia
+                                e originalidad han sido factor para el crecimiento de Rumapp.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-white text-card-foreground shadow-sm p-6 grid gap-4"
+                        data-v0-t="card" data-aos="flip-up">
+                        <div class="flex items-center gap-4">
+                            <span class="relative flex shrink-0 overflow-hidden rounded-full h-16 w-16">
+                                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">
+                                    <img src="./media-tinified/avalos.jpg" alt="">
+                                </span>
+                            </span>
+                            <div>
+                                <h3 class="text-lg font-semibold">Jorge Ávalos</h3>
+                                <p class="text-[#192833]">Asesor</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#192833]">
+                                Docente de la carrera de Ingeniería Industrial del ITSUR, el ingeniero Jorge Ávalos es
+                                el tutor y asesor
+                                del equipo. Su vivencias y experiencias han sido de gran ayuda en momentos críticos para
+                                la compañía. Sus
+                                mayores contribuciones como asesor han sido en la parte operativa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-white text-card-foreground shadow-sm p-6 grid gap-4"
+                        data-v0-t="card" data-aos="flip-up">
+                        <div class="flex items-center gap-4">
+                            <span class="relative flex shrink-0 overflow-hidden rounded-full h-16 w-16">
+                                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">
+                                    <img src="./media-tinified/ivan.jpeg" alt="">
+                                </span>
+                            </span>
+                            <div>
+                                <h3 class="text-lg font-semibold">Gustavo Iván</h3>
+                                <p class="text-[#192833]">Asesor</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#192833]">
+                                Docente de la carrera de Ingeniería en Sistemas Computacionales del ITSUR, el ingeniero
+                                Gustavo Iván Vega también
+                                es tutor y asesor del equipo, es el responsable de orientar al equipo de desarrollo y de
+                                proponer ideas funcionales
+                                y brillantes para el departamento de software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section data-aos="fade-up" class="row w-100 mx-auto text-center py-4 light-theme">
-            <h1 class="p-3 fs-1">Historia</h1>
-            <figure class="figure d-flex align-items-center justify-content-center flex-wrap">
-                <img src="./img/historia-foto-cropped.jpeg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="350">
-                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start">
-                    En el año 2019 se desarrolla la versión inicial de Stream Rutas, siendo sus fundadores 
-                    estudiantes de nivel medio superior; quienes gracias a su esfuerzo lograron 
-                    ser partícipes del concurso: “Emprendedores 2020” en el tecnológico CBTis 217.
-                    <br><br>
+    <footer id="footer" class="w-full dark-theme flex items-center justify-center flex-wrap">
+        <p class="flex text-lg items-center justify-center px-3">© 2024 Copyright: Rumapp</p>
+        <div id="iconos" class="flex items-center justify-center">
+            <a href="https://www.instagram.com/stream_routes/" title="¡Paseate por nuestro Instagram!" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="mailto:rumapp24@gmail.com" title="¡Comunícate con nosotros!" target="_blank">
+                <i class="bi bi-envelope-at"></i>
+            </a>
+        </div>
+    </footer>
 
-                    En 2020, la aplicación llegó a ocupar un lugar a nivel nacional dentro de la convocatoria 
-                    “Emprendedores 2020”, sin embargo, fue necesario detener el concurso debido a la pandemia 
-                    global por el virus COVID 2019.
-                    <br><br>
-                </figcaption>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!--Animate On Scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1000,
+                once: true
+            }
+        );
 
-                
-                <figcaption class="figure-caption fs-5 w-75 mx-4 text-start pt-3">
-                    No obstante, a inicios del presente año 2023, se ha logrado retomar el proyecto con la renovación 
-                    de los integrantes del equipo, estudiantes pertenecientes al IT. del Sur de Guanajuato. 
-                    El proyecto realizó su primera participación en mayo, en el concurso de prototipos InnovaTecNM 2023 etapa local 
-                    realizado en el Campus TecNM antes mencionado, en la categoría Industrias Creativas, obteniendo el segundo lugar 
-                    en la feria y alcanzando el pase a la etapa regional.
-                    <br><br>
+        new TypeIt("#encabezado", {
+            speed: 75,
+            waitUntilVisible: true,
+        }).go();
+    </script>
+</body>
 
-                    La etapa regional (región IV) se llevó a cabo a mediados de septiembre en el Instituto Tecnológico de San Luis Potosí, donde 
-                    Rumapp obtuvo el primer lugar de la feria en la misma categoría, logrando su acreditación a la etapa nacional 
-                    a celebrarse en Puebla. <b>Rumapp sigue escribiendo su historia</b>.
-                    <br><br>
-                </figcaption>
-                <img src="./img/historia-foto-2.jpeg" class="figure-img img-fluid img-thumbnail rounded-4 mb-2" alt="..." width="400">
-            </figure>
-        </section>
-
-        <footer id="footer dark-theme" class="w-100 d-flex align-items-center justify-content-center flex-wrap">
-            <p class="d-flex fs-5 align-items-center justify-content-center px-3 pt-3">© 2024 Copyright: Rumapp</p>
-            <div id="iconos" class="d-flex align-items-center justify-content-center">
-                <a href="https://www.instagram.com/stream_routes/" title="¡Paseate por nuestro Instagram!" target="_blank"><i class="bi bi-instagram"></i></a>  
-                <a href="mailto:rumapp24@gmail.com" title="¡Comunícate con nosotros!" target="_blank"><i class="bi bi-envelope-at"></i></a>
-            </div>
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        <!--Animate On Scroll-->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init(
-                {
-                    duration: 1000,
-                    once: true
-                }
-            );
-        </script>
-    </body>
 </html>
